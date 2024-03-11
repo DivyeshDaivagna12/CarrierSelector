@@ -14,7 +14,7 @@ from carrier_product.carrier_product_repo import CarrierProductRepository
 from customer.customer_repo import CustomerRepository,CustomerEntity
 from product.product_repo import ProductRepository
 from zones.zone_repo import *
-from infrastructure.repositories.shipment_history_repo import ShipmentHistoryEntity, ShipmentHistoryRepository
+from shipment.shipment_history_repo import ShipmentHistoryEntity, ShipmentHistoryRepository
 from domain.constants import excessive_skid_id,excessive_skid_desc, loss_packaging_id, skid_packaging_id
 from datetime import date
 from domain.exceptions.bad_request_exce import BadRequestException
