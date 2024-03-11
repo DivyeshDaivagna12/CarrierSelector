@@ -1,9 +1,9 @@
 import json,re
-from domain.dtos.costing_dtos import *
-from domain.services.offering_srv import *
-from domain.services.carrier_product_srv import *
-from infrastructure.repositories.offering_repo import OfferingRepository
-from infrastructure.repositories.carrier_product_repo import CarrierProductRepository
+from costing_dtos import *
+from offering.offering_srv import *
+from carrier_product.carrier_product_srv import *
+from offering.offering_repo import OfferingRepository
+from carrier_product.carrier_product_repo import CarrierProductRepository
 
 
 class CostingService:

@@ -79,8 +79,8 @@ class ZoneService:
        user_email = "testuser"
     user_email = "test"
     # client = boto3.client('appstream',
-    #             aws_access_key_id = '',
-    #             aws_secret_access_key = '',
+    #             aws_access_key_id = 'AKIA25YN4OYKXOBCS7AF',
+    #             aws_secret_access_key = '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',
     #             region_name = 'ap-south-1'
     #         )
     client = boto3.client('appstream')
