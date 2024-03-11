@@ -1,6 +1,6 @@
 from domain.exceptions.already_exist_exce import AlreadyExistException
-from domain.interfaces.i_carrier_repo import ICarrierRepository
-from domain.entities.carrier_ent import CarrierEntity
+from i_carrier_repo import ICarrierRepository
+from carrier_ent import CarrierEntity
 from boto3.dynamodb.conditions import Key
 from infrastructure.repositories.dbhelper import DBHelper
 

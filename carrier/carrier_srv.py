@@ -1,8 +1,8 @@
 from uuid import uuid4
-from  domain.entities.carrier_ent import CarrierEntity
-from domain.dtos.carrier_dtos import *
+from  carrier_ent import CarrierEntity
+from carrier_dtos import *
 from domain.exceptions.not_found_exce import RescourceNotFoundException
-from domain.interfaces.i_carrier_repo import ICarrierRepository
+from i_carrier_repo import ICarrierRepository
 
 class CarrierService:
     def __init__(self, repo: ICarrierRepository):
