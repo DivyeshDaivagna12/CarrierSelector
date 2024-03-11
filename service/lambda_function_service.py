@@ -1,6 +1,6 @@
 from service_dtos import *
 from service_srv import *
-from infrastructure.repositories.service_repo import *
+from service_repo import *
 from application.response_builder import ResponseBuilder
 
 repo = ServiceRepository()

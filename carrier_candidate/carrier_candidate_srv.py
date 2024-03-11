@@ -1,16 +1,16 @@
 from uuid import uuid4
-from domain.dtos.carrier_candidate_dtos import *
+from carrier_candidate.carrier_candidate_dtos import *
 from domain.exceptions.not_found_exce import RescourceNotFoundException
 from domain.exceptions.bad_request_exce import BadRequestException
-from infrastructure.repositories.lane_repo import LaneRepository, LaneEntity
-from infrastructure.repositories.offering_repo import OfferingRepository, OfferingEntity
-from infrastructure.repositories.carrier_repo import CarrierRepository, CarrierEntity
-from domain.services.service_repo import ServiceRepository, ServiceEntity
+from lane.lane_repo import LaneRepository, LaneEntity
+from offering.offering_repo import OfferingRepository, OfferingEntity
+from carrier.carrier_repo import CarrierRepository
+from service.service_repo import ServiceRepository, ServiceEntity
 from carrier_product.carrier_product_repo import CarrierProductRepository
-from infrastructure.repositories.customer_repo import CustomerRepository,CustomerEntity
+from customer.customer_repo import CustomerRepository,CustomerEntity
 from infrastructure.repositories.product_repo import ProductRepository, ProductEntity
-from infrastructure.repositories.zone_repo import *
-from domain.services.zone_srv import ZoneService
+from zones.zone_repo import *
+from zones.zone_srv import ZoneService
 from datetime import date
 
 class CarrierCandidateService:

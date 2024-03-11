@@ -3,17 +3,17 @@ from carrier_selection.carrier_selection_dtos import *
 from domain.dtos.shared import *
 from offering.offering_dtos import OfferingDetailDto
 from domain.exceptions.not_found_exce import RescourceNotFoundException
-from domain.services.zone_srv import ZoneService
-from carrier_selection.carrier_selection_ent import CarrierSelectionEntity
+from zones.zone_srv import ZoneService
+from carrier_selection_ent import CarrierSelectionEntity
 # from domain.services.lane_srv import LaneService
-from infrastructure.repositories.lane_repo import LaneRepository,LaneEntity
-from infrastructure.repositories.offering_repo import OfferingRepository
-from infrastructure.repositories.carrier_repo import CarrierRepository, CarrierEntity
-from infrastructure.repositories.service_repo import ServiceRepository, ServiceEntity
+from lane.lane_repo import LaneRepository,LaneEntity
+from offering.offering_repo import OfferingRepository
+from carrier.carrier_repo import CarrierRepository, CarrierEntity
+from service.service_repo import ServiceRepository, ServiceEntity
 from carrier_product.carrier_product_repo import CarrierProductRepository
-from infrastructure.repositories.customer_repo import CustomerRepository,CustomerEntity
-from infrastructure.repositories.product_repo import ProductRepository
-from infrastructure.repositories.zone_repo import *
+from customer.customer_repo import CustomerRepository,CustomerEntity
+from product.product_repo import ProductRepository
+from zones.zone_repo import *
 from infrastructure.repositories.shipment_history_repo import ShipmentHistoryEntity, ShipmentHistoryRepository
 from domain.constants import excessive_skid_id,excessive_skid_desc, loss_packaging_id, skid_packaging_id
 from datetime import date

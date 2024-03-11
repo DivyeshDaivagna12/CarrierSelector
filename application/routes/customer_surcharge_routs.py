@@ -1,8 +1,5 @@
 
-from dataclasses import asdict, is_dataclass
-import json
 from aws_lambda_powertools import Logger, Tracer
-
 from application.response_builder import ResponseBuilder
 from domain.dtos.customer_surcharge_dtos import *
 from domain.services.customer_surcharge_srv import *
