@@ -1,8 +1,8 @@
 from uuid import uuid4
 from  packaging_ent import PackagingEntity
 from packaging_dtos import *
-from domain.exceptions.bad_request_exce import BadRequestException
-from domain.exceptions.not_found_exce import RescourceNotFoundException
+from common_methods.bad_request_exce import BadRequestException
+from common_methods.not_found_exce import RescourceNotFoundException
 from  i_packaging_repo import IPackagingRepository
 from domain.constants import loss_packaging_id,skid_packaging_id
 
