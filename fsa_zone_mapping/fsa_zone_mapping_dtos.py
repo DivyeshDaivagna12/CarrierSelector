@@ -1,13 +1,10 @@
-
-from ast import List
-from typing import List, Optional
-
+from pydantic import BaseModel
 class FsaZoneMappingDetailDto:
         origin_fsa:str
         origin_zone:int
         is_active:bool
  
-class FsaZoneMappingSetDto:
+class FsaZoneMappingSetDto(BaseModel):
         origin_fsa:str
         origin_zone:int
         is_active:bool

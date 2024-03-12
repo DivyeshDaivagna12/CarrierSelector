@@ -1,13 +1,10 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
+from fsa_zone_mapping.common_methods.already_exist_exce import AlreadyExistException
 from i_fsa_zone_mapping_repo import IFsaZoneMappingRepository
 from fsa_zone_mapping_ent import FsaZoneMappingEntity
 from boto3.dynamodb.conditions import Key
 import boto3
 from infrastructure.repositories.dbhelper import DBHelper
 from concurrent.futures import ThreadPoolExecutor, wait
-import os
-
-
 
 table_name=DBHelper.get_table()
 

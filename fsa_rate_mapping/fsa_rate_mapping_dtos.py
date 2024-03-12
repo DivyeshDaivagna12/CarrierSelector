@@ -1,8 +1,4 @@
-
-from ast import List
-# from aws_lambda_powertools.utilities.parser import parse, BaseModel, ValidationError
-from typing import List, Optional
-
+from pydantic import BaseModel
 
 class FsaRateMappingDetailDto:
         destination_fsa:str
@@ -10,7 +6,7 @@ class FsaRateMappingDetailDto:
         rate_code:str
         is_active:bool
  
-class FsaRateMappingSetDto:
+class FsaRateMappingSetDto(BaseModel):
         destination_fsa:str
         origin_zone:int
         rate_code:str
