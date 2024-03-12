@@ -4,15 +4,13 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 
-class CarrierDetailDto:
+class TimeDefiniteDetailDto:
         id:str
         description:str
-        weighting: Optional[str]
         is_active:bool
  
-class CarrierSetDto(BaseModel):
-        id:str
+class TimeDefiniteSetDto(BaseModel):
+        id:Optional[str]
         description:str
-        weighting: Optional[str]
         is_active:bool
 

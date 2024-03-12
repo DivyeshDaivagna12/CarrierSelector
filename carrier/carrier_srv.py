@@ -1,7 +1,7 @@
 from uuid import uuid4
 from  carrier_ent import CarrierEntity
 from carrier_dtos import *
-from domain.exceptions.not_found_exce import RescourceNotFoundException
+from common_methods.not_found_exce import RescourceNotFoundException
 from i_carrier_repo import ICarrierRepository
 
 class CarrierService:

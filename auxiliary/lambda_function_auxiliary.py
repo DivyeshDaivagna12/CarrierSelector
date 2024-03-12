@@ -1,4 +1,4 @@
-from application.response_builder import ResponseBuilder
+from common_methods.response_builder import ResponseBuilder
 from customer_surcharge.customer_surcharge_srv import CustomerSurchargeService
 from service.service_srv import ServiceService
 from customer_surcharge.customer_surcharge_repo import CustomerSurchargeRepository
