@@ -1,8 +1,6 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
 from i_customer_pricing_repo import ICustomerPricingRepository
 from customer_pricing_ent import CustomerPricingEntity
 from boto3.dynamodb.conditions import Key
-
 from infrastructure.repositories.dbhelper import DBHelper
 
 _key = "RM#PR"

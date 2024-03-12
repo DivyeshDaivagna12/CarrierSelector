@@ -1,11 +1,8 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
-from domain.exceptions.not_found_exce import RescourceNotFoundException
-from domain.interfaces.i_customer_surcharge_repo import ICustomerSurchargeRepository
-from domain.entities.customer_surcharge_ent import CustomerSurchargeEntity
+from customer_surcharge.already_exist_exce import AlreadyExistException
+from i_customer_surcharge_repo import ICustomerSurchargeRepository
+from customer_surcharge_ent import CustomerSurchargeEntity
 from boto3.dynamodb.conditions import Key
-
 from infrastructure.repositories.dbhelper import DBHelper
-
 
 _key = "RM#SR"
 _entity = "customersurcharge"

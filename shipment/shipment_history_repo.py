@@ -1,8 +1,6 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
 from i_shipment_history_repo import IShipmentHistoryRepository
 from shipment_history_ent import ShipmentHistoryEntity
 from boto3.dynamodb.conditions import Key
-
 from infrastructure.repositories.dbhelper import DBHelper
 
  

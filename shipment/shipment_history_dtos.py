@@ -1,8 +1,4 @@
 
-from ast import List
-from typing import List, Optional
-
-
 class ShipmentHistoryDetailDto:
         customer:str
         origin_address:str

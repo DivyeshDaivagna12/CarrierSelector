@@ -1,7 +1,3 @@
-from ast import List
-import json
-from uuid import UUID
-from domain.custom_encoder import CustomeEncoder
 from shipment_history_dtos import *
 
 class ShipmentHistoryEntity():

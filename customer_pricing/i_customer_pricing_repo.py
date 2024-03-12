@@ -1,4 +1,4 @@
-from domain.interfaces.i_repository import IRepository
+from customer_pricing.i_repository import IRepository
 
 class ICustomerPricingRepository(IRepository):
       pass

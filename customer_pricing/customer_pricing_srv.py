@@ -1,9 +1,7 @@
-from uuid import uuid4
 from customer_pricing_ent import CustomerPricingEntity
 from customer_pricing_dtos import *
-from domain.exceptions.not_found_exce import ResourceNotFoundException
+from customer_pricing.not_found_exce import ResourceNotFoundException
 from i_customer_pricing_repo import ICustomerPricingRepository
-
 
 class CustomerPricingService:
     def __init__(self, repo: ICustomerPricingRepository):

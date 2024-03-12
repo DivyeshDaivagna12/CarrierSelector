@@ -1,8 +1,4 @@
 
-from ast import List
-from typing import List, Optional
-#from aws_lambda_powertools.utilities.parser import parse, BaseModel, ValidationError
-
 class CustomerPricingDetailDto:
         packing_type:str 
         product:str

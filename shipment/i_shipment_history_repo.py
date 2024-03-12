@@ -1,4 +1,4 @@
-from domain.interfaces.i_repository import IRepository
+from shipment.i_repository import IRepository
 from typing import TypeVar
 
 T = TypeVar("T")

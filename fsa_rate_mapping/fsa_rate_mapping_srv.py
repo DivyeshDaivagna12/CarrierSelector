@@ -1,7 +1,6 @@
-from uuid import uuid4
 from fsa_rate_mapping_ent import FsaRateMappingEntity
 from fsa_rate_mapping_dtos import *
-from domain.exceptions.not_found_exce import RescourceNotFoundException
+from fsa_rate_mapping.not_found_exce import RescourceNotFoundException
 from i_fsa_rate_mapping_repo import IFsaRateMappingRepository
 
 class FsaRateMappingService:

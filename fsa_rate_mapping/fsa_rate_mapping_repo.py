@@ -1,8 +1,7 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
+from fsa_rate_mapping.already_exist_exce import AlreadyExistException
 from i_fsa_rate_mapping_repo import IFsaRateMappingRepository
 from fsa_rate_mapping_ent import FsaRateMappingEntity
 from boto3.dynamodb.conditions import Key
-
 from infrastructure.repositories.dbhelper import DBHelper
 
 _key = "#OZ"

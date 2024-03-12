@@ -1,21 +1,17 @@
 # Standard library imports
-from dataclasses import asdict, is_dataclass
 from ast import parse
-import json
 
 # Local application imports
-from application.response_builder import ResponseBuilder
+from fsa_rate_mapping.response_builder import ResponseBuilder
 from fsa_rate_mapping_dtos import *
 from fsa_rate_mapping_srv import *
 from fsa_rate_mapping_repo import FsaRateMappingRepository
-# from aws_lambda_powertools.event_handler.api_gateway import Router
 
 repo = FsaRateMappingRepository()
 service = FsaRateMappingService(repo)
 
 def lambda_handler(event, context)->any:
     request =  event["body"]
-    #path = event['path']
     http_method = event['requestContext']['http']['method']
     path = event['requestContext']['http']['path']
 

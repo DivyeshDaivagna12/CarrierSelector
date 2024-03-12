@@ -8,16 +8,12 @@ import datetime
 # Local application imports
 from fsa_zone_mapping_ent import FsaZoneMappingEntity
 from fsa_zone_mapping_dtos import *
-from domain.services.bulk_insert_history_srv import BulkInsertHistoryService
-from domain.dtos.bulk_insert_history_dtos import BulkInsertHistorySetDto
-from domain.entities.bulk_insert_history_ent import BulkInsertHistoryEntity
-
-from domain.exceptions.not_found_exce import RescourceNotFoundException
+from fsa_zone_mapping.bulk_insert_history_srv import BulkInsertHistoryService
+from fsa_zone_mapping.bulk_insert_history_dtos import BulkInsertHistorySetDto
+from fsa_zone_mapping.not_found_exce import RescourceNotFoundException
 from i_fsa_zone_mapping_repo import IFsaZoneMappingRepository
-
-
-# from domain.constants import *
-from infrastructure.repositories.bulk_insert_history_repo import BulkInsertHistoryRepository
+from constants import *
+from fsa_zone_mapping.bulk_insert_history_repo import BulkInsertHistoryRepository
 
 client=boto3.client('s3')
 
@@ -102,8 +98,6 @@ class FsaZoneMappingService:
 
         # bulk-insert-history
        
-      #  now =datetime.datetime.now()
-      #  start_date_time = now.strftime("%m%d%Y%H%M%S")
        start_date_time=int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
 
        bulk_insert_history_entity=  BulkInsertHistorySetDto(original_file_name=original_file_name,file_name=filename,user_id=user_email,date_time=start_date_time)

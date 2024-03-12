@@ -1,16 +1,12 @@
 # Standard library imports
-import json
 from ast import parse
-from dataclasses import asdict, is_dataclass
 
 # Local application imports
-from application.response_builder import ResponseBuilder
+from customer_surcharge.response_builder import ResponseBuilder
 from customer_surcharge_dtos import *
 from customer_surcharge_srv import *
 from customer_surcharge_repo import CustomerSurchargeRepository
-# from aws_lambda_powertools.event_handler.api_gateway import Router
 
-#router = Router()
 repo = CustomerSurchargeRepository()
 service = CustomerSurchargeService(repo)
 
@@ -34,7 +30,7 @@ def lambda_handler(event, context)->any:
          return ResponseBuilder.build(dtos)
     
     elif  http_method == "GET" and path == '/<serviceId>':
-        serviceId = request.args.get('serviceId', default = None)
+        serviceId =  event["queryStringParameters"]["serviceId"]
         dto = service.get(serviceId)
         return ResponseBuilder.build(dto)
     

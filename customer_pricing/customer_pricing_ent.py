@@ -1,10 +1,4 @@
-from ast import List
-import json
-from uuid import UUID
-# from domain.custom_encoder import CustomeEncoder
-# from domain.dtos.customer_pricing_dtos import *
-from customer_pricing.customer_pricing_dtos import CustomerPricingDetailDto, CustomerPricingSetDto
-
+from customer_pricing_dtos import CustomerPricingDetailDto, CustomerPricingSetDto
 
 class CustomerPricingEntity():
 

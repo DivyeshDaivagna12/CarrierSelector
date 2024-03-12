@@ -1,10 +1,9 @@
-from uuid import uuid4
 from customer_surcharge_ent import CustomerSurchargeEntity
 from customer_surcharge_dtos import *
-from domain.exceptions.bad_request_exce import BadRequestException
-from domain.exceptions.not_found_exce import RescourceNotFoundException
+from customer_surcharge.bad_request_exce import BadRequestException
+from customer_surcharge.not_found_exce import RescourceNotFoundException
 from i_customer_surcharge_repo import ICustomerSurchargeRepository
-from domain.constants import excessive_skid_id,excessive_skid_desc
+from customer_surcharge.constants import excessive_skid_id, excessive_skid_desc
 
 class CustomerSurchargeService:
     def __init__(self, repo: ICustomerSurchargeRepository):
