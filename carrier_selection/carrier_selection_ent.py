@@ -1,7 +1,4 @@
 from ast import List
-import json
-from uuid import UUID
-from domain.custom_encoder import CustomeEncoder, to_custom_json
 from carrier_selection.carrier_selection_dtos import *
 
 class CarrierSelectionEntity():

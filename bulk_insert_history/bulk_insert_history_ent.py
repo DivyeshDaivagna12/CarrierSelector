@@ -1,12 +1,6 @@
-from ast import List
-import json
-from uuid import UUID
-from domain.custom_encoder import CustomeEncoder
 from bulk_insert_history.bulk_insert_history_dtos import *
 from domain.constants import *
-import logging
 import boto3
-from botocore.exceptions import ClientError
 
 class BulkInsertHistoryEntity():
     original_file_name:str

@@ -15,11 +15,14 @@ def lambda_handler(event, context)->any:
     if http_method == "PUT" and path == '/':
         service.set()
         return ResponseBuilder.build("Updated successfully")
+    
     elif  http_method == "GET" and path == '/<id>/filter/<filter>':
-        dtos = service.get_by_id(id, filter)
+        dtos = service.get_by_id(event["queryStringParameters"]["id"], 
+                                 event["queryStringParameters"]["filter"])
         return ResponseBuilder.build(dtos)
+    
     elif  http_method == "GET" and path == '/carrier/<carrierId>':
-        dtos = service.get_by_carrierId(event["rawQueryString"])
+        dtos = service.get_by_carrierId(event["queryStringParameters"]["carrierId"])
         return ResponseBuilder.build(dtos)
     else:
         return { "statusCode": 404, "body": "NotFound" }
