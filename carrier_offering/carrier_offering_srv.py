@@ -1,7 +1,4 @@
-from uuid import uuid4
-from carrier_offering_ent import CarrierOfferingEntity
 from carrier_offering_dtos import *
-from domain.exceptions.not_found_exce import RescourceNotFoundException
 from i_carrier_offering_repo import ICarrierOfferingRepository
 
 class CarrierOfferingService:

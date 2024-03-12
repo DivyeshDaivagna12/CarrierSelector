@@ -1,4 +1,4 @@
-from application.response_builder import ResponseBuilder
+from common_methods.response_builder import ResponseBuilder
 from customer_dtos import *
 from customer_srv import *
 from customer_repo import CustomerRepository
@@ -18,7 +18,7 @@ def lambda_handler(event, context)->any:
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "GET" and path == '/<id>':
-        dtos = service.get(event["rawQueryString"])
+        dtos = service.get(event["queryStringParameters"]["id"])
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "PUT" and path == '/':

@@ -1,4 +1,4 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
+from common_methods.already_exist_exce import AlreadyExistException
 from i_customer_surcharge_discount_repo import ICustomerSurchargeDiscountRepository
 from customer_surcharge_discount_ent import CustomerSurchargeDiscountEntity
 from boto3.dynamodb.conditions import Key

@@ -1,7 +1,7 @@
 from ast import List
 import json
 from uuid import UUID
-from domain.custom_encoder import CustomeEncoder
+from common_methods.custom_encoder import CustomeEncoder
 from carrier_offering_dtos import *
 
 class CarrierOfferingEntity():
