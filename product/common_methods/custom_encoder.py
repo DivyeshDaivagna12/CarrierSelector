@@ -1,12 +1,6 @@
 import json
-
-from domain.dtos.product_dtos import *
-from domain.dtos.offering_dtos import *
-from domain.dtos.carrier_selection_dtos import *
-from domain.dtos.skid_spacing_engine_dtos import *
-from domain.dtos.rate_master_dtos import *
-from domain.dtos.carrier_candidate_dtos import *
-from domain.dtos.shared import *
+from product.common_methods.shared import ConstraintDto, CostDto, ScalePiece, ScaleSkid
+from product.product_dtos import ProductDetailDto
 
 class CustomeEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -18,9 +12,7 @@ class CustomeEncoder(json.JSONEncoder):
             return obj.__dict__
         if isinstance(obj, ScalePiece):
             return obj.__dict__
-        if isinstance(obj, ProductDetail):
-            return obj.__dict__
-        if isinstance(obj, ServiceDto):
+        if isinstance(obj, ProductDetailDto):
             return obj.__dict__
         return json.JSONEncoder.default(self,obj)
 
