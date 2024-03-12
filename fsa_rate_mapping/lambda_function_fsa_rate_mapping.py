@@ -23,7 +23,7 @@ def lambda_handler(event, context)->any:
         parsed_payload: FsaRateMappingSetDto = parse(event=request, model=FsaRateMappingSetDto)
         service.create(parsed_payload)
         return ResponseBuilder.build(parsed_payload.destination_fsa)
-    
+        
     elif  http_method == "PUT" and path == '/':
         parsed_payload: FsaRateMappingSetDto = parse(event=request, model=FsaRateMappingSetDto)
         service.set(parsed_payload)
@@ -35,8 +35,8 @@ def lambda_handler(event, context)->any:
 
     
     elif  http_method == "GET" and path == '/destination_fsa/<destination_fsa>/origin_zone/<origin_zone>':
-          destination_fsa = request.args.get('destination_fsa', default = None)
-          origin_zone = request.args.get('origin_zone', default = None)
+          destination_fsa = event["queryStringParameters"]["destination_fsa"]
+          origin_zone = event["queryStringParameters"]["origin_zone"]
           dto = service.get(destination_fsa,origin_zone)
           return ResponseBuilder.build(dto)
     

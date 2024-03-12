@@ -39,7 +39,7 @@ def lambda_handler(event, context)->any:
 
     
     elif  http_method == "GET" and path == '/origin-fsa/<origin_fsa>':
-          origin_fsa = request.args.get('origin_fsa', default = None)
+          origin_fsa = event["queryStringParameters"]["origin_fsa"]
           dto = service.get(origin_fsa)
           return ResponseBuilder.build(dto)
     
