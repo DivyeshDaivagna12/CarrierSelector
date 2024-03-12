@@ -1,7 +1,7 @@
 from uuid import uuid4
 from  product_family_ent import ProductFamilyEntity
 from product_family_dtos import *
-from domain.exceptions.not_found_exce import RescourceNotFoundException
+from common_methods.not_found_exce import RescourceNotFoundException
 from i_product_family_repo import IProductFamilyRepository
 
 class ProductFamilyService:

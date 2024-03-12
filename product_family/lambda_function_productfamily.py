@@ -23,7 +23,7 @@ def lambda_handler(event, context)->any:
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "GET" and path == '/<id>':
-        dto = service.get(event["rawQueryString"])
+        dto = service.get( event["queryStringParameters"]["id"])
         return   ResponseBuilder.build(dto)
     
     else:

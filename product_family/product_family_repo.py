@@ -1,4 +1,4 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
+from common_methods.already_exist_exce import AlreadyExistException
 from i_product_family_repo import IProductFamilyRepository
 from product_family_ent import ProductFamilyEntity
 from boto3.dynamodb.conditions import Key
