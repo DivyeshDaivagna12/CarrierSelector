@@ -1,9 +1,7 @@
-from dataclasses import asdict, is_dataclass
-import json
 from application.response_builder import ResponseBuilder
 from customer_surcharge_discount.customer_surcharge_discount_dtos import *
 from customer_surcharge_discount.customer_surcharge_discount_srv import *
-from infrastructure.repositories.customer_surcharge_discount_repo import CustomerSurchargeDiscountRepository
+from customer_surcharge_discount_repo import CustomerSurchargeDiscountRepository
 from aws_lambda_powertools.event_handler.api_gateway import Router
 
 repo = CustomerSurchargeDiscountRepository()

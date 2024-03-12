@@ -1,10 +1,8 @@
-from aws_lambda_powertools import Logger, Tracer
 from application.response_builder import ResponseBuilder
-from customer.customer_dtos import *
-from domain.services.customer_srv import *
-from infrastructure.repositories.customer_repo import CustomerRepository
+from customer_dtos import *
+from customer_srv import *
+from customer_repo import CustomerRepository
 from aws_lambda_powertools.event_handler.api_gateway import Router
-from infrastructure.repositories.customer_surcharge_repo import CustomerSurchargeRepository
 
 repo = CustomerRepository()
 service = CustomerService(repo)

@@ -1,10 +1,10 @@
 from uuid import uuid4
-from  domain.entities.carrier_product_ent import CarrierProductEntity
-from carrier_product.carrier_product_dtos import *
+from carrier_product_ent import CarrierProductEntity
+from carrier_product_dtos import *
 from domain.exceptions.bad_request_exce import BadRequestException
 from domain.exceptions.not_found_exce import RescourceNotFoundException
-from carrier_product.i_carrier_product_repo import ICarrierProductRepository
-from infrastructure.repositories.offering_repo import OfferingRepository, OfferingEntity
+from i_carrier_product_repo import ICarrierProductRepository
+from offering.offering_repo import OfferingRepository, OfferingEntity
 from domain.constants import excessive_skid_id,excessive_skid_desc
 
 class CarrierProductService:

@@ -1,11 +1,11 @@
 from uuid import uuid4
-from  domain.entities.lane_ent import LaneEntity
-from lane.lane_dtos import *
+from lane_ent import LaneEntity
+from lane_dtos import *
 from domain.exceptions.not_found_exce import RescourceNotFoundException
 from domain.exceptions.already_exist_exce import AlreadyExistException
 
 from lane.i_lane_repo import ILaneRepository
-from infrastructure.repositories.offering_repo import OfferingRepository, OfferingEntity
+from offering.offering_repo import OfferingRepository, OfferingEntity
 
 class LaneService:
     def __init__(self, repo: ILaneRepository):

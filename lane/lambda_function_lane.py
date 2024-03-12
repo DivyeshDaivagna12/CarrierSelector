@@ -3,9 +3,9 @@ import json
 from aws_lambda_powertools import Logger, Tracer
 
 from application.response_builder import ResponseBuilder
-from lane.lane_dtos import *
-from domain.services.lane_srv import *
-from infrastructure.repositories.lane_repo import LaneRepository
+from lane_dtos import *
+from lane_srv import *
+from lane_repo import LaneRepository
 from aws_lambda_powertools.event_handler.api_gateway import Router
 
 repo = LaneRepository()
