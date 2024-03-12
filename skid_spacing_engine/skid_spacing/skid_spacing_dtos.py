@@ -1,4 +1,4 @@
-from aws_lambda_powertools.utilities.parser import BaseModel
+from pydantic import BaseModel
 from typing import Optional
 
 
