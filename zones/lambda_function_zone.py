@@ -1,6 +1,6 @@
 from zone_dtos import *
 from zone_srv import *
-from infrastructure.repositories.zone_repo import *
+from zone_repo import *
 from application.response_builder import ResponseBuilder
 
 repo = ZoneRepository()

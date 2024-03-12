@@ -5,7 +5,7 @@ from boto3.dynamodb.conditions import Key
 import datetime
 import boto3
 import os
-from domain.exceptions.not_found_exce import RescourceNotFoundException
+from common_methods.not_found_exce import RescourceNotFoundException
 
 from infrastructure.repositories.RDSdbhelper import RDSDBHelper
 
