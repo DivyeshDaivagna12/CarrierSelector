@@ -1,7 +1,7 @@
 import os
 import jwt
 import time
-from application.unauthorized_exception import UnauthorizedException
+from unauthorized_exception import UnauthorizedException
 
 # Signature Verification
 def access_token_decoder(access_token,issuer_url,issuer_url_m2m):
