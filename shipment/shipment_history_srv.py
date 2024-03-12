@@ -1,7 +1,6 @@
 from uuid import uuid4
 from shipment_history_ent import ShipmentHistoryEntity
 from shipment_history_dtos import *
-from domain.exceptions.not_found_exce import RescourceNotFoundException
 from i_shipment_history_repo import IShipmentHistoryRepository
 
 class ShipmentHistoryService:

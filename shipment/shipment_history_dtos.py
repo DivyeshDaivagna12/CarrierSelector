@@ -1,8 +1,4 @@
-
-from ast import List
-from typing import List, Optional
-
-
+from pydantic import BaseModel
 class ShipmentHistoryDetailDto:
         customer:str
         origin_address:str
@@ -10,7 +6,7 @@ class ShipmentHistoryDetailDto:
         carrier_id: str
         shipment_date: int
  
-class ShipmentHistorySetDto:
+class ShipmentHistorySetDto(BaseModel):
         customer:str
         origin_address:str
         shipment_id:str
