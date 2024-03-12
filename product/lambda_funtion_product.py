@@ -1,4 +1,5 @@
-from application.response_builder import ResponseBuilder
+from ast import parse
+from product.common_methods.response_builder import ResponseBuilder
 from product_dtos import *
 from product_srv import *
 from product_repo import ProductRepository
@@ -14,7 +15,7 @@ def lambda_handler(event, context)->any:
     path = event['requestContext']['http']['path']
      
     if http_method == "GET" and path == '/<id>':
-        dtos = ps.get(event["rawQueryString"])
+        dtos = ps.get(event["queryStringParameters"]["id"])
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "GET" and path == '/':

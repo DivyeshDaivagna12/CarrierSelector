@@ -1,8 +1,8 @@
 from uuid import uuid4
-from  domain.entities.skid_spacing_ent import SkidSpacingEntity
-from domain.dtos.skid_spacing_dtos import *
-from domain.exceptions.not_found_exce import RescourceNotFoundException
-from domain.interfaces.i_skid_spacing_repo import ISkidSpacingRepository
+from skid_spacing.i_skid_spacing_repo import ISkidSpacingRepository
+from skid_spacing.common_methods.not_found_exce import RescourceNotFoundException
+from skid_spacing.skid_spacing_dtos import SkidSpacingDetailDto, SkidSpacingSetDto
+from skid_spacing.skid_spacing_ent import SkidSpacingEntity
 
 class SkidSpacingService:
     def __init__(self, repo: ISkidSpacingRepository):

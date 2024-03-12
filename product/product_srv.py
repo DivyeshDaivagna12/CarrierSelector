@@ -1,8 +1,8 @@
-from uuid import uuid4
-from  domain.entities.product_ent import ProductEntity
-from domain.dtos.product_dtos import *
-from domain.exceptions.not_found_exce import RescourceNotFoundException
-from domain.interfaces.i_product_repo import IProductRepository
+from product.i_product_repo import IProductRepository
+from product.product_ent import ProductEntity
+from product_dtos import *
+from product.common_methods.not_found_exce import RescourceNotFoundException
+
 
 class ProductService:
     def __init__(self, repo: IProductRepository):
