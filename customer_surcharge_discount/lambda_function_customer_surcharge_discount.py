@@ -1,8 +1,7 @@
-from application.response_builder import ResponseBuilder
+from common_methods.response_builder import ResponseBuilder
 from customer_surcharge_discount.customer_surcharge_discount_dtos import *
 from customer_surcharge_discount.customer_surcharge_discount_srv import *
 from customer_surcharge_discount_repo import CustomerSurchargeDiscountRepository
-from aws_lambda_powertools.event_handler.api_gateway import Router
 
 repo = CustomerSurchargeDiscountRepository()
 service = CustomerSurchargeDiscountService(repo)
@@ -17,8 +16,9 @@ def lambda_handler(event, context)->any:
         dtos = service.get_all()
         return ResponseBuilder.build(dtos)
     
-    elif  http_method == "GET" and path == '/<customer>/<product>':
-        dtos = service.get(event["rawQueryString"])
+    elif  http_method == "GET" and path == '/customer/<customerId>/surcharge/<surchargeId>':
+        dtos = service.get(event["queryStringParameters"]["customerId"],
+                           event["queryStringParameters"]["surchargeId"])
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "PUT" and path == '/':

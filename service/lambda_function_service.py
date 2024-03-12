@@ -1,7 +1,7 @@
 from service_dtos import *
 from service_srv import *
 from service_repo import *
-from application.response_builder import ResponseBuilder
+from common_methods.response_builder import ResponseBuilder
 
 repo = ServiceRepository()
 service = ServiceService(repo)
@@ -17,7 +17,7 @@ def lambda_handler(event, context)->any:
         return ResponseBuilder.build(dtos)  
     
     elif  http_method == "GET" and path == '/<id>':
-        dtos = service.get(event["rawQueryString"])
+        dtos = service.get(event["queryStringParameters"]["id"])
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "PUT" and path == '/':

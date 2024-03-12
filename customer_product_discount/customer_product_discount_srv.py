@@ -1,7 +1,7 @@
 from uuid import uuid4
-from  customer_product_discount.customer_product_discount_ent import CustomerProductDiscountEntity
+from customer_product_discount.customer_product_discount_ent import CustomerProductDiscountEntity
 from customer_product_discount.customer_product_discount_dtos import *
-from domain.exceptions.not_found_exce import RescourceNotFoundException
+from common_methods.not_found_exce import RescourceNotFoundException
 from i_customer_product_discount_repo import ICustomerProductDiscountRepository
 
 class CustomerProductDiscountService:

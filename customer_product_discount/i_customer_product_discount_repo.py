@@ -1,6 +1,6 @@
 from abc import abstractmethod
 from customer_product_discount_ent import CustomerProductDiscountEntity
-from domain.interfaces.i_repository import IRepository
+from common_methods.i_repository import IRepository
 
 class ICustomerProductDiscountRepository(IRepository):
       abstractmethod

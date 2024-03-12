@@ -1,10 +1,8 @@
 import json
-from application.response_builder import ResponseBuilder
+from common_methods.response_builder import ResponseBuilder
 from customer_product_discount.customer_product_discount_dtos import *
 from customer_product_discount.customer_product_discount_srv import *
 from customer_product_discount_repo import CustomerProductDiscountRepository
-from aws_lambda_powertools.event_handler.api_gateway import Router
-
 
 repo = CustomerProductDiscountRepository()
 service = CustomerProductDiscountService(repo)
@@ -20,7 +18,9 @@ def lambda_handler(event, context)->any:
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "GET" and path == '/<customer>/<product>':
-        dtos = service.get(event["rawQueryString"])
+        dtos = service.get(event["queryStringParameters"]["customer"],
+                           event["queryStringParameters"]["product"],
+                           None)
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "PUT" and path == '/':
@@ -34,6 +34,12 @@ def lambda_handler(event, context)->any:
         dto.__dict__ = resquest
         service.create(dto)
         return ResponseBuilder.build("Saved successfully")
+    
+    elif http_method == "GET" and path == '/customer/<customerId>/product/<productId>/rateCode/<rateCode>':
+        dto = service.get(event["queryStringParameters"]["customer"],
+                           event["queryStringParameters"]["product"],
+                           event["queryStringParameters"]["rateCode"])
+        return ResponseBuilder.build(dto)
     
     else:
         return { "statusCode": 404, "body": "NotFound" }

@@ -1,7 +1,5 @@
-from uuid import uuid4
-from  bulk_insert_history.bulk_insert_history_ent import BulkInsertHistoryEntity
+from bulk_insert_history.bulk_insert_history_ent import BulkInsertHistoryEntity
 from bulk_insert_history.bulk_insert_history_dtos import *
-from domain.exceptions.not_found_exce import RescourceNotFoundException
 from bulk_insert_history.i_bulk_insert_history_repo import IBulkInsertHistoryRepository
 
 class BulkInsertHistoryService:
