@@ -1,7 +1,7 @@
 from dataclasses import asdict, is_dataclass
 from application.response_builder import ResponseBuilder
-from domain.dtos.carrier_candidate_dtos import *
-from domain.services.carrier_candidate_srv import *
+from carrier_candidate_dtos import *
+from carrier_candidate_srv import *
 from aws_lambda_powertools.event_handler.api_gateway import Router
 
 service = CarrierCandidateService()

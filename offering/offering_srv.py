@@ -1,6 +1,6 @@
 import datetime
 from uuid import uuid4
-from  domain.entities.offering_ent import OfferingEntity
+from offering.offering_ent import OfferingEntity
 from carrier_offering.carrier_offering_ent import CarrierOfferingEntity
 from offering.offering_dtos import *
 from domain.exceptions.already_exist_exce import AlreadyExistException
@@ -9,7 +9,7 @@ from domain.exceptions.not_found_exce import RescourceNotFoundException
 from offering.i_offering_repo import IOfferingRepository
 from carrier_offering.i_carrier_offering_repo import ICarrierOfferingRepository
 from infrastructure.repositories.carrier_offering_repo import CarrierOfferingRepository
-from infrastructure.repositories.product_repo import ProductRepository, ProductEntity
+from product.product_repo import ProductRepository
 from domain.constants import excessive_skid_id,excessive_skid_desc, loss_packaging_id, skid_packaging_id
 from datetime import date
 import json

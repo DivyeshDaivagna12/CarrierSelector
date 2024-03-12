@@ -2,9 +2,9 @@ from dataclasses import asdict, is_dataclass
 import json
 from aws_lambda_powertools import Logger, Tracer
 from application.response_builder import ResponseBuilder
-from carrier_product.carrier_product_dtos import *
-from domain.services.carrier_product_srv import *
-from carrier_product.carrier_product_repo import CarrierProductRepository
+from carrier_product_dtos import *
+from carrier_product_srv import *
+from carrier_product_repo import CarrierProductRepository
 from aws_lambda_powertools.event_handler.api_gateway import Router
 
 repo = CarrierProductRepository()

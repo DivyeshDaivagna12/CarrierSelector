@@ -1,5 +1,5 @@
 from domain.exceptions.already_exist_exce import AlreadyExistException
-from customer.i_customer_repo import ICustomerRepository
+from i_customer_repo import ICustomerRepository
 from domain.entities.customer_ent import CustomerEntity
 from boto3.dynamodb.conditions import Key
 from infrastructure.repositories.dbhelper import DBHelper

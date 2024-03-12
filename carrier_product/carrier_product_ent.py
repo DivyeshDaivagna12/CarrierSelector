@@ -1,30 +1,35 @@
 from ast import List
+import decimal
 import json
 from uuid import UUID
 from domain.custom_encoder import CustomeEncoder
-from carrier_offering_dtos import *
+from domain.dtos.carrier_product_dtos import *
 
-class CarrierOfferingEntity():
+
+class CarrierProductEntity():
     description:str
-    carrier: str
-    offering: str
+    carrier:str
+    product:str
+    cost:str
     is_active:bool
   
     def __init__(self,prop_dict=None):
         if prop_dict != None:
             self.__dict__ = prop_dict
     
-    def to_dto(self)->CarrierOfferingDetailDto:
-        dto = CarrierOfferingDetailDto()
+    def to_dto(self)->CarrierProductDetailDto:
+        dto = CarrierProductDetailDto()
         dto.description = self.description
         dto.carrier = self.carrier
-        dto.offering = self.offering
+        dto.product = self.product
+        dto.cost = float(self.cost)
         dto.is_active = self.is_active
         return dto
     
-    def set(self, dto:CarrierOfferingSetDto):
-        self.description = dto.description
+    def set(self, dto:CarrierProductSetDto):
+        self.description = dto.carrier+dto.product
         self.carrier = dto.carrier
-        self.offering = dto.offering
+        self.product = dto.product
+        self.cost = str(dto.cost)
         self.is_active = dto.is_active
         return self

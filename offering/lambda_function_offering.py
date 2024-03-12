@@ -1,6 +1,6 @@
 from offering.offering_dtos import *
 from offering.offering_srv import *
-from infrastructure.repositories.offering_repo import OfferingRepository
+from offering_repo import OfferingRepository
 from application.response_builder import ResponseBuilder
 
 repo = OfferingRepository()

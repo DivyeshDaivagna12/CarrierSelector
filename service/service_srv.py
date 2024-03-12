@@ -1,9 +1,9 @@
 from uuid import uuid4
 from  domain.entities.service_ent import ServiceEntity
-from service.service_dtos import *
+from service_dtos import *
 from domain.exceptions.bad_request_exce import BadRequestException
 from domain.exceptions.not_found_exce import RescourceNotFoundException
-from service.i_service_repo import IServiceRepository
+from i_service_repo import IServiceRepository
 from domain.constants import excessive_skid_id
 from domain.constants import excessive_skid_desc
 

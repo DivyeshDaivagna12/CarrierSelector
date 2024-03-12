@@ -2,7 +2,7 @@ import json
 from application.response_builder import ResponseBuilder
 from customer_product_discount.customer_product_discount_dtos import *
 from customer_product_discount.customer_product_discount_srv import *
-from infrastructure.repositories.customer_product_discount_repo import CustomerProductDiscountRepository
+from customer_product_discount_repo import CustomerProductDiscountRepository
 from aws_lambda_powertools.event_handler.api_gateway import Router
 
 
