@@ -18,7 +18,7 @@ def lambda_handler(event, context)->any:
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "GET" and path == '/address/<address>':
-        dtos = zs.get_zones_for_address(event["rawQueryString"])
+        dtos = zs.get_zones_for_address(event["queryStringParameters"]["address"])
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "GET" and path == '/status':

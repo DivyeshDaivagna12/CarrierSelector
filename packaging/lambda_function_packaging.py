@@ -24,7 +24,7 @@ def lambda_handler(event, context)->any:
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "GET" and path == '/<id>':
-        dto = service.get(id)
+        dto = service.get((event["queryStringParameters"]["id"]))
         return   ResponseBuilder.build(dto)
     else:
         return { "statusCode": 404, "body": "NotFound" }
