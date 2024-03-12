@@ -1,6 +1,5 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
-from domain.interfaces.i_skid_spacing_repo import ISkidSpacingRepository
-from domain.entities.skid_spacing_ent import SkidSpacingEntity
+from skid_spacing.i_skid_spacing_repo import ISkidSpacingRepository
+from skid_spacing.skid_spacing_ent import SkidSpacingEntity
 from boto3.dynamodb.conditions import Key
 
 from infrastructure.repositories.dbhelper import DBHelper

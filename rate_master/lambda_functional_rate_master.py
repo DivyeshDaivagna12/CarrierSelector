@@ -1,9 +1,8 @@
 from ast import parse
-from application.response_builder import ResponseBuilder
+from rate_master.common_methods.response_builder import ResponseBuilder
 from rate_master.rate_master_dtos import RateMasterSetDto
 from rate_master.rate_master_srv import RateMasterService
-from rate_master.rate_master_dtos import *
-from rate_master_srv import *
+
 
 rs = RateMasterService()
 

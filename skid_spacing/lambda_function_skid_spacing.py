@@ -1,7 +1,7 @@
 from skid_spacing_dtos import *
 from skid_spacing_srv import *
 from skid_spacing_repo import *
-from application.response_builder import ResponseBuilder
+from skid_spacing.common_methods.response_builder import ResponseBuilder
 
 repo = SkidSpacingRepository()
 ss = SkidSpacingService(repo)
@@ -22,7 +22,7 @@ def lambda_handler(event, context)->any:
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "PUT" and path == '/<id>':
-        ss.set(event["rawQueryString"])
+        ss.set(event["queryStringParameters"]["id"])
         return ResponseBuilder.build("Updated successfully")
     
     else:

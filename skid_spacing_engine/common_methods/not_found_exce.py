@@ -1,0 +1,2 @@
+class RescourceNotFoundException(Exception):
+    pass
