@@ -1,6 +1,6 @@
 
 from ast import List
-from aws_lambda_powertools.utilities.parser import BaseModel, ValidationError
+from pydantic import BaseModel
 from typing import List, Optional
 from domain.dtos.shared import ConstraintDto
 

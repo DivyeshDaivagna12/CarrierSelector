@@ -1,4 +1,4 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
+from common_methods.already_exist_exce import AlreadyExistException
 from i_bulk_insert_history_repo import IBulkInsertHistoryRepository
 from bulk_insert_history_ent import BulkInsertHistoryEntity
 from boto3.dynamodb.conditions import Key

@@ -1,6 +1,6 @@
 from abc import abstractmethod
 from customer_surcharge_discount_ent import CustomerSurchargeDiscountEntity
-from domain.interfaces.i_repository import IRepository
+from common_methods.i_repository import IRepository
 
 class ICustomerSurchargeDiscountRepository(IRepository):
       abstractmethod
