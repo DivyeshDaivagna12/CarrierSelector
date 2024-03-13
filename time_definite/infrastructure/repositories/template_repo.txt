@@ -1,0 +1,54 @@
+from domain.exceptions.already_exist_exce import AlreadyExistException
+from domain.interfaces.i_#fileName#_repo import I#entityName#Repository
+from domain.entities.#fileName#_ent import #entityName#Entity
+from boto3.dynamodb.conditions import Key
+
+from infrastructure.repositories.dbhelper import DBHelper
+
+update pk and remove this line 
+_key = "PK#"
+_entity = "#entitynamesmallcase#"
+class #entityName#Repository(I#entityName#Repository):
+   
+    def save(self, enty: #entityName#Entity) -> None:
+            dic = enty.__dict__
+            dic['PK'] = _key + enty.id
+            dic['SK'] = "#"+ _key + str()
+            dic['entity'] = _entity
+            dic['unique_description'] = "#"+_key + enty.description.upper()
+            
+            if self.exits(enty):
+              raise AlreadyExistException(f"{_entity} {enty.description} already exists")
+           
+            DBHelper.put_item(dic)
+        
+    def get_by_id(self, id: str) -> #entityName#Entity:
+            key =  Key={
+                    "PK": _key +id,
+                    "SK": "#"+_key
+                }
+            item = DBHelper.get_item(key)
+            if item is None:
+                   return None
+            enty = #entityName#Entity(item)
+            return enty
+    
+    def get_all(self) -> list[#entityName#Entity]:
+         k=Key('SK').eq("#"+_key)
+         return DBHelper.query('SK-PK-index',k,#entityName#Entity)
+    
+    def exits(self, enty: #entityName#Entity) -> bool:
+         k= Key('unique_description').eq('#' + _key + enty.description.upper()) 
+         items = DBHelper.query('unique_description-index',k,#entityName#Entity)
+        
+         if len(items) == 1 and items[0].id != enty.id:
+            return True
+ 
+         if len(items) > 1:
+            return True
+         
+         return False
+       
+
+        
+  
