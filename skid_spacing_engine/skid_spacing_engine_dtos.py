@@ -1,16 +1,15 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List
 
 
 class SkidSpacingEngineDetailDto:
         skid_count: int
 
-class Dimension(BaseModel):
+class Dimension:
         length: float
         width: float
         
-class SkidSpacingEngineRequestDto(BaseModel):
+class SkidSpacingEngineRequestDto:
         dimensions: List[Dimension]
 

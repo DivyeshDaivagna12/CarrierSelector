@@ -1,5 +1,4 @@
 
-from pydantic import BaseModel
 from typing import Optional
 
 
@@ -12,7 +11,7 @@ class SkidSpacingDetailDto:
         second_longest_side_max:str
         is_active:bool
  
-class SkidSpacingSetDto(BaseModel):
+class SkidSpacingSetDto:
         id:Optional[str]
         skid_space:int
         longest_side_min:str

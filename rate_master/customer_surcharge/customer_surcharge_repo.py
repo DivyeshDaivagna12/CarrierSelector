@@ -1,5 +1,4 @@
 from rate_master.common_methods.already_exist_exce import AlreadyExistException
-from rate_master.common_methods.not_found_exce import RescourceNotFoundException
 from boto3.dynamodb.conditions import Key
 
 from infrastructure.repositories.dbhelper import DBHelper

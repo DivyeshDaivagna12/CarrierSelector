@@ -1,6 +1,6 @@
 from product.i_product_repo import IProductRepository
 from product.product_ent import ProductEntity
-from product_dtos import *
+from product.product_dtos import *
 from product.common_methods.not_found_exce import RescourceNotFoundException
 
 

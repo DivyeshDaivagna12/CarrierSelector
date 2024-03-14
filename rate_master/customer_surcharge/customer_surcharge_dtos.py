@@ -1,4 +1,3 @@
-from pydantic import BaseModel
 
 
 class CustomerSurchargeDetailDto:
@@ -6,7 +5,7 @@ class CustomerSurchargeDetailDto:
         price:float
         is_active:bool
  
-class CustomerSurchargeSetDto(BaseModel):
+class CustomerSurchargeSetDto:
         service:str
         price:float
         is_active:bool

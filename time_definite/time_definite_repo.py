@@ -1,6 +1,6 @@
 from time_definite.common_methods.already_exist_exce import AlreadyExistException
 from boto3.dynamodb.conditions import Key
-from infrastructure.repositories.dbhelper import DBHelper
+from time_definite.infrastructure.dbhelper import DBHelper
 from time_definite.i_time_definite_repo import ITimeDefiniteRepository
 from time_definite.time_definite_ent import TimeDefiniteEntity
 

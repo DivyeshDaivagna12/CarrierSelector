@@ -1,6 +1,6 @@
 from ast import List
 from product.common_methods.custom_encoder import to_custom_json
-from product_dtos import *
+from product.product_dtos import *
 
 class ProductEntity():
     id:str

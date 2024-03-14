@@ -1,6 +1,6 @@
-from skid_spacing_dtos import *
-from skid_spacing_srv import *
-from skid_spacing_repo import *
+from skid_spacing.skid_spacing_dtos import *
+from skid_spacing.skid_spacing_srv import *
+from skid_spacing.skid_spacing_repo import *
 from skid_spacing.common_methods.response_builder import ResponseBuilder
 
 repo = SkidSpacingRepository()

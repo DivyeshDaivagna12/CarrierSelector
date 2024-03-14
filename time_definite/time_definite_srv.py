@@ -1,6 +1,6 @@
 from time_definite.i_time_definite_repo import ITimeDefiniteRepository
 from time_definite.time_definite_ent import TimeDefiniteEntity
-from time_definite_dtos import *
+from time_definite.time_definite_dtos import *
 from time_definite.common_methods.bad_request_exce import BadRequestException
 from time_definite.common_methods.not_found_exce import RescourceNotFoundException
 from time_definite.common_methods.constants import same_day_time_definite_id, next_day_time_definite_id, same_day_time_definite_desc, next_day_time_definite_desc 

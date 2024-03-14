@@ -1,6 +1,6 @@
 from rate_master.common_methods.already_exist_exce import AlreadyExistException
 from boto3.dynamodb.conditions import Key
-from infrastructure.repositories.dbhelper import DBHelper
+from rate_master.infrastructure.dbhelper import DBHelper
 from rate_master.customer_surcharge_discount.customer_surcharge_discount_ent import CustomerSurchargeDiscountEntity
 from rate_master.customer_surcharge_discount.i_customer_surcharge_discount_repo import ICustomerSurchargeDiscountRepository
 

@@ -1,6 +1,4 @@
-
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
 from product.shared import ConstraintDto
 
@@ -15,7 +13,7 @@ class ProductDetailDto:
         is_restricted: bool
         is_active:bool
  
-class ProductSetDto(BaseModel):
+class ProductSetDto:
         id:str
         description:str
         family:str

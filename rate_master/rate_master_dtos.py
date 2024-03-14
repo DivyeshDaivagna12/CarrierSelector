@@ -1,9 +1,8 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
 
-class ProductDetail(BaseModel):
+class ProductDetail:
         product: str
         services: List[str]
         skids: Optional[int]

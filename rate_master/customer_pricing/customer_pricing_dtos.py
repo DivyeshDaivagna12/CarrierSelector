@@ -1,6 +1,4 @@
 
-from pydantic import BaseModel
-
 
 class CustomerPricingDetailDto:
         packing_type:str 
@@ -13,7 +11,7 @@ class CustomerPricingDetailDto:
         additional_loose_piece_percentage:float
         is_active:bool
  
-class CustomerPricingSetDto(BaseModel):
+class CustomerPricingSetDto:
         packing_type:str 
         product:str
         rate_code:str
