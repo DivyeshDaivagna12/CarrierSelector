@@ -1,8 +1,8 @@
 from ast import List
 import json
 from uuid import UUID
-from domain.custom_encoder import CustomeEncoder
-from domain.dtos.carrier_dtos import *
+from common_methods.custom_encoder import CustomeEncoder
+from carrier.carrier_dtos import *
 
 class CarrierEntity():
     id:str

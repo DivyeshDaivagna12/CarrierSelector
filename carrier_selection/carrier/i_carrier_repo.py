@@ -1,4 +1,4 @@
-from domain.interfaces.i_repository import IRepository
+from common_methods.i_repository import IRepository
 from abc import ABC, abstractmethod
 
 class ICarrierRepository(IRepository):

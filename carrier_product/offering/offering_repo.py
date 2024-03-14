@@ -1,6 +1,6 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
-from i_offering_repo import IOfferingRepository
-from offering_ent import OfferingEntity
+from common_methods.already_exist_exce import AlreadyExistException
+from carrier_product.offering.i_offering_repo import IOfferingRepository
+from carrier_product.offering.offering_ent import OfferingEntity
 from boto3.dynamodb.conditions import Key
 
 from infrastructure.repositories.dbhelper import DBHelper

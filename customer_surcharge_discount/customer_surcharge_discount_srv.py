@@ -2,7 +2,7 @@ from uuid import uuid4
 from customer_surcharge_discount.customer_surcharge_discount_ent import CustomerSurchargeDiscountEntity
 from customer_surcharge_discount.customer_surcharge_discount_dtos import *
 from common_methods.not_found_exce import RescourceNotFoundException
-from i_customer_surcharge_discount_repo import ICustomerSurchargeDiscountRepository
+from customer_surcharge_discount.i_customer_surcharge_discount_repo import ICustomerSurchargeDiscountRepository
 
 class CustomerSurchargeDiscountService:
     def __init__(self, repo: ICustomerSurchargeDiscountRepository):

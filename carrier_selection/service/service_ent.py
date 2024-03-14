@@ -1,8 +1,5 @@
-from ast import List
-import json
-from uuid import UUID
 from common_methods.custom_encoder import CustomeEncoder
-from service_dtos import *
+from service.service_dtos import *
 
 class ServiceEntity():
     id:str

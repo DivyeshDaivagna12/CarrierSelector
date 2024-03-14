@@ -1,8 +1,8 @@
 from uuid import uuid4
-from shipment_history_ent import ShipmentHistoryEntity
-from shipment_history_dtos import *
-from domain.exceptions.not_found_exce import RescourceNotFoundException
-from i_shipment_history_repo import IShipmentHistoryRepository
+from shipment.shipment_history_ent import ShipmentHistoryEntity
+from shipment.shipment_history_dtos import *
+from common_methods.not_found_exce import RescourceNotFoundException
+from shipment.i_shipment_history_repo import IShipmentHistoryRepository
 
 class ShipmentHistoryService:
     def __init__(self, repo: IShipmentHistoryRepository):

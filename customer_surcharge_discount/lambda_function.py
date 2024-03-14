@@ -1,7 +1,7 @@
 from common_methods.response_builder import ResponseBuilder
 from customer_surcharge_discount.customer_surcharge_discount_dtos import *
 from customer_surcharge_discount.customer_surcharge_discount_srv import *
-from customer_surcharge_discount_repo import CustomerSurchargeDiscountRepository
+from customer_surcharge_discount.customer_surcharge_discount_repo import CustomerSurchargeDiscountRepository
 
 repo = CustomerSurchargeDiscountRepository()
 service = CustomerSurchargeDiscountService(repo)

@@ -1,6 +1,6 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
-from domain.interfaces.i_product_repo import IProductRepository
-from domain.entities.product_ent import ProductEntity
+from common_methods.already_exist_exce import AlreadyExistException
+from product.i_product_repo import IProductRepository
+from product.product_ent import ProductEntity
 from boto3.dynamodb.conditions import Key
 from infrastructure.repositories.dbhelper import DBHelper
 

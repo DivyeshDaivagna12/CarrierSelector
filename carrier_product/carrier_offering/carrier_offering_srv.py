@@ -1,5 +1,5 @@
-from carrier_offering_dtos import *
-from i_carrier_offering_repo import ICarrierOfferingRepository
+from carrier_product.carrier_offering.carrier_offering_dtos import *
+from carrier_product.carrier_offering.i_carrier_offering_repo import ICarrierOfferingRepository
 
 class CarrierOfferingService:
     def __init__(self, repo: ICarrierOfferingRepository):

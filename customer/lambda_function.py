@@ -1,10 +1,11 @@
 from common_methods.response_builder import ResponseBuilder
-from lane_dtos import *
-from lane_srv import *
-from lane_repo import LaneRepository
+from customer.customer_dtos import *
+from customer.customer_srv import *
+from customer.customer_repo import CustomerRepository
+from aws_lambda_powertools.event_handler.api_gateway import Router
 
-repo = LaneRepository()
-service = LaneService(repo)
+repo = CustomerRepository()
+service = CustomerService(repo)
 
 def lambda_handler(event, context)->any:
     resquest =  event["body"]
@@ -12,8 +13,8 @@ def lambda_handler(event, context)->any:
     http_method = event['requestContext']['http']['method']
     path = event['requestContext']['http']['path']
 
-    if http_method == "GET" and path == '/carrier/<carrierId>':
-        dtos = service.get_by_carrierId(event["queryStringParameters"]["carrierId"])
+    if http_method == "GET" and path == '/':
+        dtos = service.get_all()
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "GET" and path == '/<id>':
@@ -21,15 +22,13 @@ def lambda_handler(event, context)->any:
         return ResponseBuilder.build(dtos)
     
     elif  http_method == "PUT" and path == '/':
-        dto = LaneSetDto()
+        dto = CustomerSetDto()
         dto.__dict__ = resquest
         service.update(dto)
         return ResponseBuilder.build("Updated successfully")
     
     elif  http_method == "POST" and path == '/':
-        dto = LaneSetDto()
+        dto = CustomerSetDto()
         dto.__dict__ = resquest
         service.create(dto)
         return ResponseBuilder.build("Saved successfully")
-    else:
-        return { "statusCode": 404, "body": "NotFound" }

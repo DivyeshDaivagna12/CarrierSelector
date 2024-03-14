@@ -1,6 +1,6 @@
 from common_methods.already_exist_exce import AlreadyExistException
-from i_lane_repo import ILaneRepository
-from lane_ent import LaneEntity
+from lane.i_lane_repo import ILaneRepository
+from lane.lane_ent import LaneEntity
 from boto3.dynamodb.conditions import Key
 
 from infrastructure.repositories.dbhelper import DBHelper

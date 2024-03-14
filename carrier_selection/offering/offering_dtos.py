@@ -1,8 +1,7 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
-from domain.dtos.shared import CostDto
+from carrier_selection.shared import CostDto
 
 class OfferingDetailDto:
         id:str
@@ -22,7 +21,7 @@ class OfferingDetailDto:
         is_active: bool
         
  
-class OfferingSetDto(BaseModel):
+class OfferingSetDto:
         id:Optional[str]
         description:str
         carrier: str

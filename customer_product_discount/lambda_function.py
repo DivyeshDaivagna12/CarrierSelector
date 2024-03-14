@@ -2,7 +2,7 @@ import json
 from common_methods.response_builder import ResponseBuilder
 from customer_product_discount.customer_product_discount_dtos import *
 from customer_product_discount.customer_product_discount_srv import *
-from customer_product_discount_repo import CustomerProductDiscountRepository
+from customer_product_discount.customer_product_discount_repo import CustomerProductDiscountRepository
 
 repo = CustomerProductDiscountRepository()
 service = CustomerProductDiscountService(repo)

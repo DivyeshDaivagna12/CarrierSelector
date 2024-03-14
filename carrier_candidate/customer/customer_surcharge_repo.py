@@ -1,7 +1,7 @@
 from common_methods.already_exist_exce import AlreadyExistException
 from common_methods.not_found_exce import RescourceNotFoundException
-from i_customer_surcharge_repo import ICustomerSurchargeRepository
-from customer_surcharge_ent import CustomerSurchargeEntity
+from customer.i_customer_surcharge_repo import ICustomerSurchargeRepository
+from customer.customer_surcharge_ent import CustomerSurchargeEntity
 from boto3.dynamodb.conditions import Key
 
 from infrastructure.repositories.dbhelper import DBHelper

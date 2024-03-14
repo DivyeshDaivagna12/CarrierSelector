@@ -1,5 +1,5 @@
 from abc import abstractmethod
-from customer_product_discount_ent import CustomerProductDiscountEntity
+from customer_product_discount.customer_product_discount_ent import CustomerProductDiscountEntity
 from common_methods.i_repository import IRepository
 
 class ICustomerProductDiscountRepository(IRepository):

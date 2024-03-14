@@ -1,6 +1,6 @@
 from common_methods.already_exist_exce import AlreadyExistException
-from i_customer_repo import ICustomerRepository
-from customer_ent import CustomerEntity
+from customer.i_customer_repo import ICustomerRepository
+from customer.customer_ent import CustomerEntity
 from boto3.dynamodb.conditions import Key
 from infrastructure.repositories.dbhelper import DBHelper
 
