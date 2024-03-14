@@ -1,6 +1,6 @@
 from common_methods.already_exist_exce import AlreadyExistException
-from i_customer_product_discount_repo import ICustomerProductDiscountRepository
-from customer_product_discount_ent import CustomerProductDiscountEntity
+from customer_product_discount.i_customer_product_discount_repo import ICustomerProductDiscountRepository
+from customer_product_discount.customer_product_discount_ent import CustomerProductDiscountEntity
 from boto3.dynamodb.conditions import Key
 
 from infrastructure.repositories.dbhelper import DBHelper

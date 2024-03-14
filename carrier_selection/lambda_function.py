@@ -1,7 +1,7 @@
 from dataclasses import asdict, is_dataclass
 from common_methods.response_builder import ResponseBuilder
-from carrier_selection_dtos import *
-from carrier_selection_srv import *
+from carrier_selection.carrier_selection_dtos import *
+from carrier_selection.carrier_selection_srv import *
 
 service = CarrierSelectionService()
 

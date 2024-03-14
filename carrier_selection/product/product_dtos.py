@@ -1,8 +1,7 @@
 
 from ast import List
-from aws_lambda_powertools.utilities.parser import parse, BaseModel, ValidationError
 from typing import List, Optional
-from domain.dtos.shared import ConstraintDto
+from carrier_selection.shared import ConstraintDto
 
 class ProductDetailDto:
         id:str
@@ -15,7 +14,7 @@ class ProductDetailDto:
         is_restricted: bool
         is_active:bool
  
-class ProductSetDto(BaseModel):
+class ProductSetDto:
         id:str
         description:str
         family:str

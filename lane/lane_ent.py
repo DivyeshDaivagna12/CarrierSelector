@@ -1,6 +1,6 @@
 from ast import List
 from common_methods.custom_encoder import CustomeEncoder
-from lane_dtos import *
+from lane.lane_dtos import *
 
 class LaneEntity():
     id:str

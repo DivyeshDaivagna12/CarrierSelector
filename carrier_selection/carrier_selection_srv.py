@@ -3,7 +3,7 @@ from shared import *
 from carrier_selection.offering.offering_dtos import OfferingDetailDto
 from common_methods.not_found_exce import RescourceNotFoundException
 from carrier_selection.zones.zone_srv import ZoneService
-from carrier_selection_ent import CarrierSelectionEntity
+from carrier_selection.carrier_selection_ent import CarrierSelectionEntity
 # from domain.services.lane_srv import LaneService
 from carrier_selection.lane.lane_repo import LaneRepository,LaneEntity
 from carrier_selection.offering.offering_repo import OfferingRepository

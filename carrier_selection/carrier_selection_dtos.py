@@ -1,10 +1,9 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
 
 
-class ProductDetail(BaseModel):
+class ProductDetail:
         product: str
         services: List[str]
         skids: Optional[int]
@@ -25,7 +24,7 @@ class CarrierSelectionDetailDto:
         customer_name: str
         
  
-class CarrierSelectionSetDto(BaseModel):
+class CarrierSelectionSetDto:
         origin_address: str
         destination_address: str
         shipment_date: int

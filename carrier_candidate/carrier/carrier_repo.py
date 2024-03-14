@@ -1,4 +1,4 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
+from common_methods.already_exist_exce import AlreadyExistException
 from i_carrier_repo import ICarrierRepository
 from carrier_ent import CarrierEntity
 from boto3.dynamodb.conditions import Key

@@ -1,6 +1,5 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
 
 
@@ -12,7 +11,7 @@ class CustomerProductDiscountDetailDto:
         is_active:bool
         additional_piece_discount:str
  
-class CustomerProductDiscountSetDto(BaseModel):
+class CustomerProductDiscountSetDto:
         product:str
         customer:str
         rate_code:Optional[str]

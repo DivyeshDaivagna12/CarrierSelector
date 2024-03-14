@@ -1,5 +1,5 @@
 from uuid import uuid4
-from customer_ent import CustomerEntity
+from customer.customer_ent import CustomerEntity
 from customer.customer_dtos import *
 from common_methods.not_found_exce import RescourceNotFoundException
 from customer.i_customer_repo import ICustomerRepository

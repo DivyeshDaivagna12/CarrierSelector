@@ -1,9 +1,9 @@
 from ast import List
 import json
 from uuid import UUID
-from domain.custom_encoder import CustomeEncoder, to_custom_json
-from domain.dtos.offering_dtos import *
-from domain.dtos.shared import ScalePiece, ScaleSkid
+from common_methods.custom_encoder import CustomeEncoder, to_custom_json
+from carrier_product.offering.offering_dtos import *
+from carrier_product.shared import ScalePiece, ScaleSkid
 
 class OfferingEntity():
     id:str

@@ -1,8 +1,7 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
-from domain.dtos.shared import ConstraintDto
+from carrier_candidate.shared import ConstraintDto
 
 class ServiceDto:
         service_id: str
@@ -19,7 +18,7 @@ class CarrierCandidateDetailDto:
         product_constraints: List[ConstraintDto]
         services: List[ServiceDto]
  
-class CarrierCandidateSetDto(BaseModel):
+class CarrierCandidateSetDto:
         origin_address: str
         destination_address: str
         request_date: Optional[int]

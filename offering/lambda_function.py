@@ -1,7 +1,7 @@
 from offering.offering_dtos import *
 from offering.offering_srv import *
-from offering_repo import OfferingRepository
-from application.response_builder import ResponseBuilder
+from offering.offering_repo import OfferingRepository
+from common_methods.response_builder import ResponseBuilder
 
 repo = OfferingRepository()
 service = OfferingService(repo)

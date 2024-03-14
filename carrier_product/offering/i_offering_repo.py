@@ -1,5 +1,5 @@
-from domain.entities.offering_ent import OfferingEntity
-from domain.interfaces.i_repository import IRepository
+from carrier_product.offering.offering_ent import OfferingEntity
+from common_methods.i_repository import IRepository
 from abc import ABC, abstractmethod
 from typing import TypeVar
 

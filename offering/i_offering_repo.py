@@ -1,4 +1,4 @@
-from offering_ent import OfferingEntity
+from offering.offering_ent import OfferingEntity
 from common_methods.i_repository import IRepository
 from abc import ABC, abstractmethod
 from typing import TypeVar

@@ -1,9 +1,9 @@
 from uuid import uuid4
-from carrier_product_ent import CarrierProductEntity
-from carrier_product_dtos import *
+from carrier_product.carrier_product_ent import CarrierProductEntity
+from carrier_product.carrier_product_dtos import *
 from common_methods.bad_request_exce import BadRequestException
 from common_methods.not_found_exce import RescourceNotFoundException
-from i_carrier_product_repo import ICarrierProductRepository
+from carrier_product.i_carrier_product_repo import ICarrierProductRepository
 from carrier_product.offering.offering_repo import OfferingRepository
 from common_methods.constants import excessive_skid_id,excessive_skid_desc
 

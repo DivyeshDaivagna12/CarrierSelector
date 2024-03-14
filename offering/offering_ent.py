@@ -1,7 +1,7 @@
 from ast import List
 import json
 from common_methods.custom_encoder import CustomeEncoder, to_custom_json
-from offering_dtos import *
+from offering.offering_dtos import *
 
 class OfferingEntity():
     id:str

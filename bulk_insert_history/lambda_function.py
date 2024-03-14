@@ -1,7 +1,7 @@
 from common_methods.response_builder import ResponseBuilder
 from bulk_insert_history.bulk_insert_history_dtos import *
-from bulk_insert_history_srv import *
-from bulk_insert_history_repo import BulkInsertHistoryRepository
+from bulk_insert_history.bulk_insert_history_srv import *
+from bulk_insert_history.bulk_insert_history_repo import BulkInsertHistoryRepository
 
 repo = BulkInsertHistoryRepository()
 service = BulkInsertHistoryService(repo)

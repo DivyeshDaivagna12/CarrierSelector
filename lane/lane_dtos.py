@@ -1,6 +1,5 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
 
 
@@ -13,7 +12,7 @@ class LaneDetailDto:
         carrier: str
         is_active:bool
  
-class LaneSetDto(BaseModel):
+class LaneSetDto:
         id:Optional[str]
         description:str
         offerings: List[str]

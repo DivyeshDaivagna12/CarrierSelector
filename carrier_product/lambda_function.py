@@ -1,7 +1,7 @@
 from common_methods.response_builder import ResponseBuilder
-from carrier_product_dtos import *
-from carrier_product_srv import *
-from carrier_product_repo import CarrierProductRepository
+from carrier_product.carrier_product_dtos import *
+from carrier_product.carrier_product_srv import *
+from carrier_product.carrier_product_repo import CarrierProductRepository
 
 repo = CarrierProductRepository()
 service = CarrierProductService(repo)

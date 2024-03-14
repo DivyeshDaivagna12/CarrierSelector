@@ -1,7 +1,7 @@
-from application.response_builder import ResponseBuilder
-from carrier_offering_dtos import *
-from carrier_offering_srv import *
-from carrier_offering_repo import CarrierOfferingRepository
+from common_methods.response_builder import ResponseBuilder
+from carrier_offering.carrier_offering_dtos import *
+from carrier_offering.carrier_offering_srv import *
+from carrier_offering.carrier_offering_repo import CarrierOfferingRepository
 from aws_lambda_powertools.event_handler.api_gateway import Router
 
 repo = CarrierOfferingRepository()

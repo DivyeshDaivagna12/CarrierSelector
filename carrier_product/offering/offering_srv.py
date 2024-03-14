@@ -1,16 +1,16 @@
 import datetime
 from uuid import uuid4
-from offering.offering_ent import OfferingEntity
-from carrier_offering.carrier_offering_ent import CarrierOfferingEntity
-from offering.offering_dtos import *
-from domain.exceptions.already_exist_exce import AlreadyExistException
-from domain.exceptions.bad_request_exce import BadRequestException
-from domain.exceptions.not_found_exce import RescourceNotFoundException
-from offering.i_offering_repo import IOfferingRepository
-from carrier_offering.i_carrier_offering_repo import ICarrierOfferingRepository
-from infrastructure.repositories.carrier_offering_repo import CarrierOfferingRepository
-from product.product_repo import ProductRepository
-from domain.constants import excessive_skid_id,excessive_skid_desc, loss_packaging_id, skid_packaging_id
+from carrier_product.offering.offering_ent import OfferingEntity
+from carrier_product.carrier_offering.carrier_offering_ent import CarrierOfferingEntity
+from carrier_product.offering.offering_dtos import *
+from common_methods.already_exist_exce import AlreadyExistException
+from common_methods.bad_request_exce import BadRequestException
+from common_methods.not_found_exce import RescourceNotFoundException
+from carrier_product.offering.i_offering_repo import IOfferingRepository
+from carrier_product.carrier_offering.i_carrier_offering_repo import ICarrierOfferingRepository
+from carrier_product.carrier_offering.carrier_offering_repo import CarrierOfferingRepository
+from carrier_product.product.product_repo import ProductRepository
+from common_methods.constants import excessive_skid_id,excessive_skid_desc, loss_packaging_id, skid_packaging_id
 from datetime import date
 import json
 
