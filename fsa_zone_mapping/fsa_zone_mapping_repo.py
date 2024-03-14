@@ -1,6 +1,6 @@
 from fsa_zone_mapping.common_methods.already_exist_exce import AlreadyExistException
-from i_fsa_zone_mapping_repo import IFsaZoneMappingRepository
-from fsa_zone_mapping_ent import FsaZoneMappingEntity
+from fsa_zone_mapping.i_fsa_zone_mapping_repo import IFsaZoneMappingRepository
+from fsa_zone_mapping.fsa_zone_mapping_ent import FsaZoneMappingEntity
 from boto3.dynamodb.conditions import Key
 import boto3
 from infrastructure.repositories.dbhelper import DBHelper

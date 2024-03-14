@@ -1,7 +1,7 @@
-from fsa_rate_mapping_ent import FsaRateMappingEntity
-from fsa_rate_mapping_dtos import *
+from fsa_rate_mapping.fsa_rate_mapping_ent import FsaRateMappingEntity
+from fsa_rate_mapping.fsa_rate_mapping_dtos import *
 from fsa_rate_mapping.common_methods.not_found_exce import RescourceNotFoundException
-from i_fsa_rate_mapping_repo import IFsaRateMappingRepository
+from fsa_rate_mapping.i_fsa_rate_mapping_repo import IFsaRateMappingRepository
 
 class FsaRateMappingService:
     def __init__(self, repo: IFsaRateMappingRepository):

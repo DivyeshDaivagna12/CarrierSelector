@@ -33,7 +33,7 @@ def lambda_handler(event, context)->any:
         dtos = service.get_all()
         return ResponseBuilder.build(dtos)
     
-    elif  http_method == "PUT" and path == '/<id>':
+    elif  http_method == "GET" and path == '/<id>':
         dto = service.get(event["queryStringParameters"]["id"])
         return   ResponseBuilder.build(dto)
     

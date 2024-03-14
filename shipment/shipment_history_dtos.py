@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+
 class ShipmentHistoryDetailDto:
         customer:str
         origin_address:str
@@ -6,7 +6,7 @@ class ShipmentHistoryDetailDto:
         carrier_id: str
         shipment_date: int
  
-class ShipmentHistorySetDto(BaseModel):
+class ShipmentHistorySetDto:
         customer:str
         origin_address:str
         shipment_id:str

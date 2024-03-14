@@ -1,4 +1,4 @@
-from shipment_history_dtos import *
+from shipment.shipment_history_dtos import *
 
 class ShipmentHistoryEntity():
     customer:str

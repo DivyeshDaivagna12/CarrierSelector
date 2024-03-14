@@ -1,6 +1,6 @@
 from fsa_rate_mapping.common_methods.already_exist_exce import AlreadyExistException
-from i_fsa_rate_mapping_repo import IFsaRateMappingRepository
-from fsa_rate_mapping_ent import FsaRateMappingEntity
+from fsa_rate_mapping.i_fsa_rate_mapping_repo import IFsaRateMappingRepository
+from fsa_rate_mapping.fsa_rate_mapping_ent import FsaRateMappingEntity
 from boto3.dynamodb.conditions import Key
 from infrastructure.repositories.dbhelper import DBHelper
 

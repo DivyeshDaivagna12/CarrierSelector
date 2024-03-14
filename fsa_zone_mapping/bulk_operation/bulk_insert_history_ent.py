@@ -1,5 +1,5 @@
 from fsa_zone_mapping.bulk_operation.bulk_insert_history_dtos import *
-from domain.constants import *
+from fsa_zone_mapping.common_methods.constants import *
 import boto3
 
 class BulkInsertHistoryEntity():

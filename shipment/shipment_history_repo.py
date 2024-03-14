@@ -1,5 +1,5 @@
-from i_shipment_history_repo import IShipmentHistoryRepository
-from shipment_history_ent import ShipmentHistoryEntity
+from shipment.i_shipment_history_repo import IShipmentHistoryRepository
+from shipment.shipment_history_ent import ShipmentHistoryEntity
 from boto3.dynamodb.conditions import Key
 from infrastructure.repositories.dbhelper import DBHelper
 

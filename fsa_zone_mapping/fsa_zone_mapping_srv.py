@@ -6,13 +6,13 @@ import openpyxl
 import datetime
 
 # Local application imports
-from fsa_zone_mapping_ent import FsaZoneMappingEntity
-from fsa_zone_mapping_dtos import *
+from fsa_zone_mapping.fsa_zone_mapping_ent import FsaZoneMappingEntity
+from fsa_zone_mapping.fsa_zone_mapping_dtos import *
 from fsa_zone_mapping.bulk_operation.bulk_insert_history_srv import BulkInsertHistoryService
 from fsa_zone_mapping.bulk_operation.bulk_insert_history_dtos import BulkInsertHistorySetDto
 from fsa_zone_mapping.common_methods.not_found_exce import RescourceNotFoundException
-from i_fsa_zone_mapping_repo import IFsaZoneMappingRepository
-from common_methods.constants import *
+from fsa_zone_mapping.i_fsa_zone_mapping_repo import IFsaZoneMappingRepository
+from fsa_zone_mapping.common_methods.constants import *
 from fsa_zone_mapping.bulk_operation.bulk_insert_history_repo import BulkInsertHistoryRepository
 
 client=boto3.client('s3')

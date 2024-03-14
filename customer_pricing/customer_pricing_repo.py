@@ -1,5 +1,5 @@
-from i_customer_pricing_repo import ICustomerPricingRepository
-from customer_pricing_ent import CustomerPricingEntity
+from customer_pricing.i_customer_pricing_repo import ICustomerPricingRepository
+from customer_pricing.customer_pricing_ent import CustomerPricingEntity
 from boto3.dynamodb.conditions import Key
 from infrastructure.repositories.dbhelper import DBHelper
 

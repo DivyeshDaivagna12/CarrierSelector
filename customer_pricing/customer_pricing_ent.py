@@ -1,4 +1,4 @@
-from customer_pricing_dtos import CustomerPricingDetailDto, CustomerPricingSetDto
+from customer_pricing.customer_pricing_dtos import CustomerPricingDetailDto, CustomerPricingSetDto
 
 class CustomerPricingEntity():
 

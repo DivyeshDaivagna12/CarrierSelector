@@ -1,4 +1,4 @@
-from fsa_rate_mapping_dtos import *
+from fsa_rate_mapping.fsa_rate_mapping_dtos import *
 
 class FsaRateMappingEntity():
     destination_fsa:str

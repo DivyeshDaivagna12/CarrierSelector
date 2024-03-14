@@ -1,4 +1,4 @@
-from customer_surcharge_dtos import *
+from customer_surcharge.customer_surcharge_dtos import *
 
 class CustomerSurchargeEntity():
     service:str

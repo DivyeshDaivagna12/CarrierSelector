@@ -1,4 +1,4 @@
-from fsa_zone_mapping_dtos import *
+from fsa_zone_mapping.fsa_zone_mapping_dtos import *
 
 class FsaZoneMappingEntity():
     origin_fsa:str

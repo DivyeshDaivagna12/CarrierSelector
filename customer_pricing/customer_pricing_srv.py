@@ -1,7 +1,7 @@
-from customer_pricing_ent import CustomerPricingEntity
-from customer_pricing_dtos import *
+from customer_pricing.customer_pricing_ent import CustomerPricingEntity
+from customer_pricing.customer_pricing_dtos import *
 from customer_pricing.common_methods.not_found_exce import ResourceNotFoundException
-from i_customer_pricing_repo import ICustomerPricingRepository
+from customer_pricing.i_customer_pricing_repo import ICustomerPricingRepository
 
 class CustomerPricingService:
     def __init__(self, repo: ICustomerPricingRepository):
