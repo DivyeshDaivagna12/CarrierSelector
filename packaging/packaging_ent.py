@@ -1,4 +1,4 @@
-from packaging_dtos import *
+from packaging.packaging_dtos import *
 
 class PackagingEntity():
     id:str

@@ -1,6 +1,6 @@
 from common_methods.already_exist_exce import AlreadyExistException
-from i_packaging_repo import IPackagingRepository
-from packaging_ent import PackagingEntity
+from packaging.i_packaging_repo import IPackagingRepository
+from packaging.packaging_ent import PackagingEntity
 from boto3.dynamodb.conditions import Key
 from infrastructure.repositories.dbhelper import DBHelper
 

@@ -1,7 +1,7 @@
-from product_family_dtos import *
-from product_family_srv import *
-from product_family_repo import *
-from application.response_builder import ResponseBuilder
+from product_family.product_family_dtos import *
+from product_family.product_family_srv import *
+from product_family.product_family_repo import *
+from common_methods.response_builder import ResponseBuilder
 
 repo = ProductFamilyRepository()
 service = ProductFamilyService(repo)

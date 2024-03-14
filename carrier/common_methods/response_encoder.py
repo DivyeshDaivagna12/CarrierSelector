@@ -4,7 +4,7 @@ from carrier_offering.carrier_offering_dtos import *
 from carrier_product.carrier_product_dtos import *
 from costing.costing_dtos import *
 from offering.offering_dtos import *
-from carrier_dtos import *
+from carrier.carrier_dtos import *
 from common_methods.shared import *
 #template-import
 

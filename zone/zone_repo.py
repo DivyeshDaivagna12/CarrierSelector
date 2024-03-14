@@ -1,6 +1,6 @@
 import json
-from i_zone_repo import IZoneRepository
-from zone_dtos import ZoneDetailDto, ZoneStatusDetailDto
+from zone.i_zone_repo import IZoneRepository
+from zone.zone_dtos import ZoneDetailDto, ZoneStatusDetailDto
 from boto3.dynamodb.conditions import Key
 import datetime
 import boto3

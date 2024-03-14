@@ -1,8 +1,8 @@
-from packaging_repo import *
-from packaging_srv import *
-from packaging_dtos import *
-from packaging_ent import *
-from application.response_builder import ResponseBuilder
+from packaging.packaging_repo import *
+from packaging.packaging_srv import *
+from packaging.packaging_dtos import *
+from packaging.packaging_ent import *
+from common_methods.response_builder import ResponseBuilder
 
 repo = PackagingRepository()
 service = PackagingService(repo)

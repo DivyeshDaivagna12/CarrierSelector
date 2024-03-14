@@ -2,7 +2,7 @@ from ast import List
 import json
 from uuid import UUID
 from common_methods.custom_encoder import CustomeEncoder
-from packaging_dtos import *
+from packaging.packaging_dtos import *
 
 class PackagingEntity():
     id:str

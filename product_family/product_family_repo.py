@@ -1,6 +1,6 @@
 from common_methods.already_exist_exce import AlreadyExistException
-from i_product_family_repo import IProductFamilyRepository
-from product_family_ent import ProductFamilyEntity
+from product_family.i_product_family_repo import IProductFamilyRepository
+from product_family.product_family_ent import ProductFamilyEntity
 from boto3.dynamodb.conditions import Key
 
 from infrastructure.repositories.dbhelper import DBHelper

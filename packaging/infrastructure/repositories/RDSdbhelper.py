@@ -1,7 +1,5 @@
 import json
 from typing import List, Type, TypeVar
-from domain.interfaces.i_product_repo import IProductRepository
-from domain.entities.product_ent import ProductEntity
 import datetime
 import boto3
 from boto3.dynamodb.conditions import Key

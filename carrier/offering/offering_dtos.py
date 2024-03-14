@@ -1,6 +1,5 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
 from common_methods.shared import CostDto
 
@@ -22,7 +21,7 @@ class OfferingDetailDto:
         is_active: bool
         
  
-class OfferingSetDto(BaseModel):
+class OfferingSetDto:
         id:Optional[str]
         description:str
         carrier: str

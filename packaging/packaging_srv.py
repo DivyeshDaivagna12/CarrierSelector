@@ -1,10 +1,10 @@
 from uuid import uuid4
-from  packaging_ent import PackagingEntity
-from packaging_dtos import *
+from packaging.packaging_ent import PackagingEntity
+from packaging.packaging_dtos import *
 from common_methods.bad_request_exce import BadRequestException
 from common_methods.not_found_exce import RescourceNotFoundException
-from  i_packaging_repo import IPackagingRepository
-from domain.constants import loss_packaging_id,skid_packaging_id
+from  packaging.i_packaging_repo import IPackagingRepository
+from common_methods.constants import loss_packaging_id,skid_packaging_id
 
 class PackagingService:
     def __init__(self, repo: IPackagingRepository):

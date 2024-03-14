@@ -1,9 +1,9 @@
 from uuid import uuid4
-from customer_surcharge_ent import CustomerSurchargeEntity
-from customer_surcharge_dtos import *
+from customer_surcharge.customer_surcharge_ent import CustomerSurchargeEntity
+from customer_surcharge.customer_surcharge_dtos import *
 from common_methods.bad_request_exce import BadRequestException
 from common_methods.not_found_exce import RescourceNotFoundException
-from i_customer_surcharge_repo import ICustomerSurchargeRepository
+from customer_surcharge.i_customer_surcharge_repo import ICustomerSurchargeRepository
 from common_methods.constants import excessive_skid_id,excessive_skid_desc
 
 class CustomerSurchargeService:

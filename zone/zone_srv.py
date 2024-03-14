@@ -1,6 +1,6 @@
-from  zone_dtos import *
+from  zone.zone_dtos import *
 from common_methods.not_found_exce import RescourceNotFoundException
-from i_zone_repo import IZoneRepository
+from zone.i_zone_repo import IZoneRepository
 from infrastructure.repositories.RDSdbhelper import RDSDBHelper
 import boto3
 import os

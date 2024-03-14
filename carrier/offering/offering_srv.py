@@ -7,8 +7,7 @@ from common_methods.already_exist_exce import AlreadyExistException
 from common_methods.bad_request_exce import BadRequestException
 from i_offering_repo import IOfferingRepository
 from carrier_offering.carrier_offering_repo import CarrierOfferingRepository
-from product.product_repo import ProductRepository
-from domain.constants import  loss_packaging_id, skid_packaging_id
+from common_methods.constants import  loss_packaging_id, skid_packaging_id
 from datetime import date
 import json
 
@@ -16,8 +15,7 @@ class OfferingService:
     def __init__(self, repo: IOfferingRepository):
         self.repo = repo
         self.coRepo = CarrierOfferingRepository()
-        self.productRepo = ProductRepository()
-
+  
  
     def set(self, dto: OfferingSetDto)->None:
         enty = OfferingEntity()

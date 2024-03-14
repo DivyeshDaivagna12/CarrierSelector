@@ -1,7 +1,7 @@
-from zone_dtos import *
-from zone_srv import *
-from zone_repo import *
-from application.response_builder import ResponseBuilder
+from zone.zone_dtos import *
+from zone.zone_srv import *
+from zone.zone_repo import *
+from common_methods.response_builder import ResponseBuilder
 
 repo = ZoneRepository()
 zs = ZoneService(repo)

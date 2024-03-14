@@ -1,7 +1,7 @@
 import json
 
 
-from domain.dtos.shared import *
+from common_methods.shared import *
 
 class CustomeEncoder(json.JSONEncoder):
     def default(self, obj):

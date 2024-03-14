@@ -1,9 +1,9 @@
 from uuid import uuid4
-from  packaging_ent import PackagingEntity
-from packaging_dtos import *
+from  packaging.packaging_ent import PackagingEntity
+from packaging.packaging_dtos import *
 from common_methods.bad_request_exce import BadRequestException
 from common_methods.not_found_exce import RescourceNotFoundException
-from  i_packaging_repo import IPackagingRepository
+from  packaging.i_packaging_repo import IPackagingRepository
 from common_methods.constants import loss_packaging_id,skid_packaging_id
 
 class PackagingService:

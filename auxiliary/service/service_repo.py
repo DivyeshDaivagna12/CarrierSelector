@@ -1,6 +1,6 @@
-from domain.exceptions.already_exist_exce import AlreadyExistException
-from i_service_repo import IServiceRepository
-from service_ent import ServiceEntity
+from common_methods.already_exist_exce import AlreadyExistException
+from service.i_service_repo import IServiceRepository
+from service.service_ent import ServiceEntity
 from boto3.dynamodb.conditions import Key
 
 from infrastructure.repositories.dbhelper import DBHelper

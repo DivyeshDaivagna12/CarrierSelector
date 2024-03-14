@@ -6,7 +6,7 @@ import json
 # from domain.dtos.skid_spacing_engine_dtos import *
 # from domain.dtos.rate_master_dtos import *
 # from domain.dtos.carrier_candidate_dtos import *
-from shared import *
+from common_methods.shared import *
 
 class CustomeEncoder(json.JSONEncoder):
     def default(self, obj):

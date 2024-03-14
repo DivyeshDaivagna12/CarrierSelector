@@ -1,9 +1,7 @@
 from ast import List
 import decimal
 import json
-from uuid import UUID
-from common_methods.custom_encoder import CustomeEncoder
-from carrier_product_dtos import *
+from carrier_product.carrier_product_dtos import *
 
 
 class CarrierProductEntity():

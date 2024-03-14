@@ -1,6 +1,5 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
 
 
@@ -10,7 +9,7 @@ class CarrierDetailDto:
         weighting: Optional[str]
         is_active:bool
  
-class CarrierSetDto(BaseModel):
+class CarrierSetDto:
         id:str
         description:str
         weighting: Optional[str]

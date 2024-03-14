@@ -1,9 +1,9 @@
 from uuid import uuid4
-from service_ent import ServiceEntity
-from service_dtos import *
+from service.service_ent import ServiceEntity
+from service.service_dtos import *
 from common_methods.bad_request_exce import BadRequestException
 from common_methods.not_found_exce import RescourceNotFoundException
-from i_service_repo import IServiceRepository
+from service.i_service_repo import IServiceRepository
 from common_methods.constants import excessive_skid_id,excessive_skid_desc
 
 class ServiceService:

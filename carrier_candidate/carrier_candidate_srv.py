@@ -8,8 +8,8 @@ from carrier_candidate.service.service_repo import ServiceRepository, ServiceEnt
 from carrier_candidate.carrier_product.carrier_product_repo import CarrierProductRepository
 from carrier_candidate.customer.customer_repo import CustomerRepository,CustomerEntity
 from carrier_candidate.product.product_repo import ProductRepository, ProductEntity
-from carrier_candidate.zones.zone_repo import *
-from carrier_candidate.zones.zone_srv import ZoneService
+from carrier_candidate.zone.zone_repo import *
+from carrier_candidate.zone.zone_srv import ZoneService
 from datetime import date
 
 class CarrierCandidateService:

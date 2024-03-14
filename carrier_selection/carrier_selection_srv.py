@@ -2,7 +2,7 @@ from carrier_selection.carrier_selection_dtos import *
 from shared import *
 from carrier_selection.offering.offering_dtos import OfferingDetailDto
 from common_methods.not_found_exce import RescourceNotFoundException
-from carrier_selection.zones.zone_srv import ZoneService
+from carrier_selection.zone.zone_srv import ZoneService
 from carrier_selection.carrier_selection_ent import CarrierSelectionEntity
 # from domain.services.lane_srv import LaneService
 from carrier_selection.lane.lane_repo import LaneRepository,LaneEntity
@@ -12,7 +12,7 @@ from carrier_selection.service.service_repo import ServiceRepository
 from carrier_selection.carrier_product.carrier_product_repo import CarrierProductRepository
 from carrier_selection.customer.customer_repo import CustomerRepository,CustomerEntity
 from carrier_selection.product.product_repo import ProductRepository
-from carrier_selection.zones.zone_repo import *
+from carrier_selection.zone.zone_repo import *
 from carrier_selection.shipment.shipment_history_repo import ShipmentHistoryRepository
 from common_methods.constants import excessive_skid_id,excessive_skid_desc, loss_packaging_id, skid_packaging_id
 from common_methods.bad_request_exce import BadRequestException

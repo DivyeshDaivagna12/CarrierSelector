@@ -1,8 +1,8 @@
 from uuid import uuid4
-from carrier_offering_ent import CarrierOfferingEntity
-from carrier_offering_dtos import *
+from carrier_offering.carrier_offering_ent import CarrierOfferingEntity
+from carrier_offering.carrier_offering_dtos import *
 from common_methods.not_found_exce import RescourceNotFoundException
-from i_carrier_offering_repo import ICarrierOfferingRepository
+from carrier_offering.i_carrier_offering_repo import ICarrierOfferingRepository
 
 class CarrierOfferingService:
     def __init__(self, repo: ICarrierOfferingRepository):

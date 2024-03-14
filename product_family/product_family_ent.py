@@ -2,7 +2,7 @@ from ast import List
 import json
 from uuid import UUID
 from common_methods.custom_encoder import CustomeEncoder
-from product_family_dtos import *
+from product_family.product_family_dtos import *
 
 class ProductFamilyEntity():
     id:str

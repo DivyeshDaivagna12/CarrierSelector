@@ -1,10 +1,10 @@
 from uuid import uuid4
-from  domain.entities.time_definite_ent import TimeDefiniteEntity
-from domain.dtos.time_definite_dtos import *
-from domain.exceptions.bad_request_exce import BadRequestException
-from domain.exceptions.not_found_exce import RescourceNotFoundException
-from domain.interfaces.i_time_definite_repo import ITimeDefiniteRepository
-from domain.constants import same_day_time_definite_id, next_day_time_definite_id, same_day_time_definite_desc, next_day_time_definite_desc 
+from time_definite.time_definite_ent import TimeDefiniteEntity
+from time_definite.time_definite_dtos import *
+from common_methods.bad_request_exce import BadRequestException
+from common_methods.not_found_exce import RescourceNotFoundException
+from time_definite.i_time_definite_repo import ITimeDefiniteRepository
+from common_methods.constants import same_day_time_definite_id, next_day_time_definite_id, same_day_time_definite_desc, next_day_time_definite_desc 
 
 class TimeDefinteService:
 

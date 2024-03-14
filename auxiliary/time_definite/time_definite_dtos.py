@@ -1,6 +1,5 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
 
 
@@ -9,7 +8,7 @@ class TimeDefiniteDetailDto:
         description:str
         is_active:bool
  
-class TimeDefiniteSetDto(BaseModel):
+class TimeDefiniteSetDto:
         id:Optional[str]
         description:str
         is_active:bool

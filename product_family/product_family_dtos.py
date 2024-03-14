@@ -1,6 +1,5 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
 
 
@@ -10,7 +9,7 @@ class ProductFamilyDetailDto:
         is_active:bool
         #modify_at:int
  
-class ProductFamilySetDto(BaseModel):
+class ProductFamilySetDto:
         id:Optional[str]
         description:str
         is_active:bool
