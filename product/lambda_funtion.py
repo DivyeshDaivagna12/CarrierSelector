@@ -1,8 +1,8 @@
 from ast import parse
 from product.common_methods.response_builder import ResponseBuilder
-from product_dtos import *
-from product_srv import *
-from product_repo import ProductRepository
+from product.product_dtos import *
+from product.product_srv import *
+from product.product_repo import ProductRepository
 
 repo = ProductRepository()
 ps = ProductService(repo)

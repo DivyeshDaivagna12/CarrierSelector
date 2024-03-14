@@ -1,8 +1,8 @@
 from ast import parse
 from time_definite.common_methods.response_builder import ResponseBuilder
-from time_definite_dtos import TimeDefiniteSetDto
-from time_definite_srv import TimeDefinteService
-from time_definite_repo import TimeDefiniteRepository
+from time_definite.time_definite_dtos import TimeDefiniteSetDto
+from time_definite.time_definite_srv import TimeDefinteService
+from time_definite.time_definite_repo import TimeDefiniteRepository
 
 repo = TimeDefiniteRepository()
 td = TimeDefinteService(repo)

@@ -1,6 +1,4 @@
 
-from pydantic import BaseModel
-
 
 class FsaRateMappingDetailDto:
         destination_fsa:str
@@ -8,7 +6,7 @@ class FsaRateMappingDetailDto:
         rate_code:str
         is_active:bool
  
-class FsaRateMappingSetDto(BaseModel):
+class FsaRateMappingSetDto:
         destination_fsa:str
         origin_zone:int
         rate_code:str

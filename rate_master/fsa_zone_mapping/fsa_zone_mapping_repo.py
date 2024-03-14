@@ -1,6 +1,6 @@
 from rate_master.common_methods.already_exist_exce import AlreadyExistException
 from boto3.dynamodb.conditions import Key
-from infrastructure.repositories.dbhelper import DBHelper
+from rate_master.infrastructure.dbhelper import DBHelper
 from concurrent.futures import ThreadPoolExecutor, wait
 from rate_master.fsa_zone_mapping.fsa_zone_mapping_ent import FsaZoneMappingEntity
 from rate_master.fsa_zone_mapping.i_fsa_zone_mapping_repo import IFsaZoneMappingRepository

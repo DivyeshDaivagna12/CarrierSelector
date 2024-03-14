@@ -1,6 +1,5 @@
 
 from ast import List
-from pydantic import BaseModel
 from typing import List, Optional
 
 
@@ -13,7 +12,7 @@ class CustomerDetailDto:
         products: Optional[List[str]]
         services: Optional[List[str]]
  
-class CustomerSetDto(BaseModel):
+class CustomerSetDto:
         id:str
         description:str
         is_active:bool

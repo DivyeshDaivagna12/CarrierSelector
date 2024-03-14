@@ -10,7 +10,7 @@ from rate_master.fsa_zone_mapping.fsa_zone_mapping_repo import FsaZoneMappingRep
 from rate_master.product.product_ent import ProductEntity
 from rate_master.product.product_repo import ProductRepository
 from rate_master.service.service_repo import ServiceRepository
-from rate_master_dtos import *
+from rate_master.rate_master_dtos import *
 from rate_master.common_methods.not_found_exce import RescourceNotFoundException
 from rate_master.common_methods.bad_request_exce import BadRequestException
 from rate_master.common_methods.constants import excessive_skid_id,excessive_skid_desc, loss_packaging_id, skid_packaging_id

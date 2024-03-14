@@ -1,5 +1,5 @@
 from skid_spacing_engine.skid_spacing.skid_spacing_repo import SkidSpacingRepository
-from skid_spacing_engine_dtos import *
+from skid_spacing_engine.skid_spacing_engine_dtos import *
 from skid_spacing_engine.common_methods.not_found_exce import RescourceNotFoundException
 
 class SkidSpacingEngineService:

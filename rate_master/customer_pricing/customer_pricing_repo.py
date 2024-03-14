@@ -1,6 +1,6 @@
 
 from boto3.dynamodb.conditions import Key
-from infrastructure.repositories.dbhelper import DBHelper
+from rate_master.infrastructure.dbhelper import DBHelper
 from rate_master.customer_pricing.customer_pricing_ent import CustomerPricingEntity
 from rate_master.customer_pricing.i_customer_pricing_repo import ICustomerPricingRepository
 

@@ -2,7 +2,7 @@ from product.i_product_repo import IProductRepository
 from product.product_ent import ProductEntity
 from product.common_methods.already_exist_exce import AlreadyExistException
 from boto3.dynamodb.conditions import Key
-from infrastructure.repositories.dbhelper import DBHelper
+from product.infrastructure.dbhelper import DBHelper
 
 _key = "PR#"
 _entity = "product"

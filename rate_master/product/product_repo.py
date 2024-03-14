@@ -1,6 +1,6 @@
 from rate_master.common_methods.already_exist_exce import AlreadyExistException
 from boto3.dynamodb.conditions import Key
-from infrastructure.repositories.dbhelper import DBHelper
+from rate_master.infrastructure.dbhelper import DBHelper
 from rate_master.product.i_product_repo import IProductRepository
 from rate_master.product.product_ent import ProductEntity
 

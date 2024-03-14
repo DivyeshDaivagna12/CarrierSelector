@@ -1,5 +1,4 @@
 
-from pydantic import BaseModel
 from typing import Optional
 
 
@@ -9,7 +8,7 @@ class CustomerSurchargeDiscountDetailDto:
         discount:str
         is_active:bool
  
-class CustomerSurchargeDiscountSetDto(BaseModel):
+class CustomerSurchargeDiscountSetDto:
         customer:Optional[str]
         surcharge:str
         discount:str
